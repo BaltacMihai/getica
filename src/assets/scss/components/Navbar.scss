@@ -1,0 +1,61 @@
+@use "./../base/variables.scss" as *;
+@use "./../base/responsive.scss" as *;
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: fixed;
+  background-color: $cl-white;
+  z-index: 9999;
+
+  @include mobile {
+    width: 85% !important;
+  }
+  .icon {
+    width: 200px;
+  }
+
+  #close {
+    display: none;
+  }
+  .menuIcon {
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    @include tablet {
+      display: none;
+
+      &.responsive {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        top: 8vh;
+        left: 0;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    }
+    a,
+    .a {
+      text-decoration: none;
+      font-size: $fs-content;
+      color: $cl-black;
+      margin: 0 2rem;
+
+      &:hover {
+        border-bottom: 2px solid $cl-primary;
+      }
+    }
+  }
+}

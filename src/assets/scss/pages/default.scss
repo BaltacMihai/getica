@@ -1,0 +1,29 @@
+@use "./../base/variables.scss" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0 20px;
+  overflow-x: hidden;
+
+  font-family: $font-family;
+}
+
+.row {
+  display: flex;
+}
+
+.col-10 {
+  width: 90%;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.pt-1 {
+  padding-top: 3rem;
+}

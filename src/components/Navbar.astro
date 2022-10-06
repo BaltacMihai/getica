@@ -1,0 +1,106 @@
+---
+import logo from "./../assets/images/logo.png";
+import hamburger from "./../assets/images/hamburger.svg";
+import closeHamburger from "./../assets/images/close.svg";
+import { BASE_URL } from "../URL";
+---
+
+<script is:inline>
+  function handleMobileMenu() {
+    let menu = document.getElementById("mynavbar");
+    let open = document.getElementById("open");
+    let close = document.getElementById("close");
+
+    if (menu.classList.contains("responsive")) {
+      menu.classList.remove("responsive");
+      close.style.display = "none";
+      open.style.display = "flex";
+    } else {
+      menu.classList.add("responsive");
+      close.style.display = "flex";
+      open.style.display = "none";
+    }
+  }
+
+  function activeTheDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+
+      for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+  };
+</script>
+
+<div class="navbar">
+  <img src={logo} alt="icon" class="icon" />
+  <img
+    src={hamburger}
+    class="menuIcon"
+    id="open"
+    onclick="handleMobileMenu()"
+  />
+  <img
+    src={closeHamburger}
+    class="menuIcon"
+    id="close"
+    onclick="handleMobileMenu()"
+  />
+  <div class="menu" id="mynavbar">
+    <a href={BASE_URL}>Acasa</a>
+
+    <div class="dropdown">
+      <div onclick="activeTheDropdown()" class="dropbtn a">
+        Energie electrica
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href={BASE_URL + "servicii_energie_electrica"}
+          >Servicii energie electrica</a
+        >
+        <a href={BASE_URL + "procesul-de-schimbare-a-furnizorului"}
+          >Schimbarea furnizorului</a
+        >
+      </div>
+    </div>
+
+    <a href="">Gaze naturale</a>
+    <a href="">Info</a>
+    <a href="">Noutati</a>
+    <a href="">Autentificare Clienti - Energetica</a>
+  </div>
+</div>
+
+<style>
+  /* Dropdown Button */
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    background-color: #fcfbfc;
+    margin-top: 15px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {
+    display: block;
+  }
+</style>

@@ -1,0 +1,160 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import homepageImg from "../assets/images/homepage/homepage_img.svg";
+import facturaLunara from "../assets/images/homepage/factura_lunara.png";
+import consultantaCasnic from "../assets/images/homepage/consultanta-casnic.png";
+import consultantaNoncasnic from "../assets/images/homepage/consultanta-noncasnic.png";
+import grafice from "../assets/images/homepage/grafice.png";
+import matering from "../assets/images/homepage/matering.png";
+import analiza from "../assets/images/homepage/analiza.png";
+import Notification from "../components/Notification.astro";
+
+const content = {
+  firstSection: {
+    title: "Getica 95",
+    subtitle: "Reducem costurile energiei electrice",
+    callToAction: {
+      text: "Afla mai mult",
+      link: "",
+    },
+  },
+
+  secondSection: {
+    title: "Servicii",
+    callToAction: {
+      text: "Solicita oferta personalizata",
+      link: "#",
+    },
+    rightPart: {
+      title: "Clienti Casnici",
+      data: [
+        {
+          imageSrc: facturaLunara,
+          title: "Factura lunara",
+          description: `Informare factura lunara digitala in "Contul tau Getica"`,
+        },
+        {
+          imageSrc: grafice,
+          title: "Grafice",
+          description: `Acces garantat la grafice si estimari personalizate.`,
+        },
+        {
+          imageSrc: consultantaCasnic,
+          title: "Consultanta",
+          description: `Consultanță privind implementarea măsurilor de reducere a consumului de energie electrică;`,
+        },
+      ],
+    },
+    leftPart: {
+      title: "Clienti non-Casnici",
+      data: [
+        {
+          imageSrc: analiza,
+          title: "Analiza",
+          description: `Analiză preliminară gratuită în cadrul căreia se clarifică procedura de schimbare a furnizorului, se stabilesc condițiile viitorului contract reciproc avantajoase`,
+        },
+        {
+          imageSrc: consultantaNoncasnic,
+          title: "Consultanta",
+          description: `Consultanță privind implementarea măsurilor de reducere a consumului de energie electrică;`,
+        },
+        {
+          imageSrc: matering,
+          title: "Metering",
+          description: `Posibilitatea de încheiere a unor contracte de metering (transmiterea datelor orare de consum zilnic) cu operatorii de distribuţie
+`,
+        },
+      ],
+    },
+  },
+  thirdSection: {
+    title: "Informatii utile",
+  },
+  fourthSection: {
+    title: "Notificari",
+  },
+};
+
+const informatiiUtile = await Astro.glob(
+  "./../data/homepage/Informatii_utile/*.md"
+);
+const notificari = await Astro.glob("./../data/homepage/Notificari/*.md");
+---
+
+<Layout>
+  <div class="page page-home">
+    <section class="row">
+      <div class="content">
+        <div class="titles">
+          <h1 class="title">{content.firstSection.title}</h1>
+          <p class="subtitle">{content.firstSection.subtitle}</p>
+          <a href={content.firstSection.callToAction.link} class="btn-primary"
+            >{content.firstSection.callToAction.text}
+          </a>
+        </div>
+      </div>
+      <img src={homepageImg} alt="" class="homepageImg" />
+    </section>
+    <section>
+      <div class="row col-10 center">
+        <div class="title">{content.secondSection.title}</div>
+        <a href={content.secondSection.callToAction.link} class="btn-primary"
+          >{content.secondSection.callToAction.text}
+        </a>
+      </div>
+      <div class="row col-10 center pt-1 responsive">
+        <div class="col">
+          <div class="subtitle">{content.secondSection.rightPart.title}</div>
+          {
+            content.secondSection.rightPart.data.map((cardElement) => {
+              return (
+                <Card
+                  imageSrc={cardElement.imageSrc}
+                  title={cardElement.title}
+                  description={cardElement.description}
+                />
+              );
+            })
+          }
+        </div>
+        <div class="col">
+          <div class="subtitle">{content.secondSection.leftPart.title}</div>
+          {
+            content.secondSection.leftPart.data.map((cardElement) => {
+              return (
+                <Card
+                  imageSrc={cardElement.imageSrc}
+                  title={cardElement.title}
+                  description={cardElement.description}
+                />
+              );
+            })
+          }
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="col-10 center">
+        <div class="title">{content.thirdSection.title}</div>
+
+        {
+          informatiiUtile.map((element) => {
+            return <Notification content={element} />;
+          })
+        }
+      </div>
+    </section>
+    <section>
+      <div class="col-10 center">
+        <div class="title">{content.fourthSection.title}</div>
+
+        {
+          notificari.map((element) => {
+            return <Notification content={element} />;
+          })
+        }
+      </div>
+    </section>
+  </div>
+</Layout>

@@ -1,0 +1,20 @@
+---
+export async function getStaticPaths() {
+  const schimbareaFrunizorului = await Astro.glob(
+    "./../data/energieElectrica/schimbareAFurnizorului/*md"
+  );
+
+  return schimbareaFrunizorului.map((link) => ({
+    params: {
+      link: link.frontmatter.guide,
+    },
+    props: {
+      link,
+    },
+  }));
+}
+
+const { Content, frontmatter } = Astro.props.link;
+---
+
+<Content />

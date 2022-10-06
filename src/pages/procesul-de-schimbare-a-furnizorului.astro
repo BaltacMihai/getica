@@ -1,0 +1,231 @@
+---
+import Layout from "../layouts/Layout.astro";
+import solarPanel from "../assets/images/servicii_energie_electrica/solarPanel.jpg";
+import acord_gdpr from "./getica/EnergieElectrica/Procesul_de_schimbare_a_furnizorului/acord_gdpr.pdf";
+
+const content = {
+  heroSection: {
+    image: solarPanel,
+    title: "Energie Electrica",
+  },
+  section: {
+    title: "Procesul de schimbare a furnizorului",
+  },
+};
+---
+
+<Layout title="Procesul de schimbare a furnizorului">
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <h2>{content.section.title}</h2>
+
+    <div class="wrapper">
+      <!-- Tab links -->
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'ModalitateDeLucru')"
+          id="defaultOpen">MODALITATE DE LUCRU</button
+        >
+        <button class="tablinks" onclick="openTab(event, 'ModelCerere')"
+          >Model cerere client final, solicitare incheiere contract piata
+          concurentiala, contracte furnizare energie electrica client casnic si
+          noncasnic, notificare privind incetarea contractului de furnizare a
+          energiei electrice</button
+        >
+        <button class="tablinks" onclick="openTab(event, 'Chestionar')"
+          >CHESTIONAR</button
+        >
+      </div>
+
+      <div class="contentTabs">
+        <!-- Tab content -->
+        <div id="ModalitateDeLucru" class="tabcontent">
+          <h2>
+            Vă prezentăm paşii ce trebuie urmaţi pentru a schimba furnizorul de
+            energie electrică de către consumatorii eligibil:
+          </h2>
+          <b>Pas 1</b>
+
+          <p>
+            Intocmire cerere de oferta de catre consumator si transmiterea
+            acesteia catre:
+          </p>
+          <p>
+            Departament ofertare/contractare | Telefon: 0374032032 | Fax:
+            0213211118 | E-mail: office@getica95.ro
+          </p>
+
+          <b>Pas 2</b>
+
+          <p>
+            Completare Chestionar energetic (Specialistii nostrii va vor ajuta
+            sa-l completati daca intampinati greutati cu aceasta)
+          </p>
+
+          <b>Pas 3</b>
+
+          <p>Negociere, agreere Contract de furnizare energie electrica</p>
+
+          <b>Pas 4</b>
+
+          <p>
+            Transmiterea către noi a tuturor Avizelor Tehnice de Racordare (ATR)
+            pentru fiecare punct de consum în parte şi a prognozelor de consum
+            lunare pentru fiecare punct de consum. ( Daca consumatorii nu sunt
+            in posesia ATR-urilor le putem pune la dispozitie un model de cerere
+            si o adresa email la care sa o trimita dupa ce o completeaza).
+          </p>
+
+          <b>Pas 5</b>
+
+          <p>Semnare Contract de furnizare</p>
+
+          <b>Pas 6</b>
+
+          <p>
+            Notificarea fostului furnizor cu cel puţin 21 de zile înainte de
+            intrarea în vigoare a noului contract de furnizare.
+          </p>
+          <p>
+            - INDICAT AR FI 30 DE ZILE INAINTE PENTRU A AVEA TIMPUL NECESAR
+            EFECTUARII EVENTUALELOR PLATI DEJA SCADENTE CATRE FOSTUL FURNIZOR.
+          </p>
+
+          <b>Pas 7</b>
+
+          <p>
+            Înregistrarea de către GETICA 95 COM a contractului la autorităţile
+            competente, moment în care începe derularea efectivă a noului
+            contract.
+          </p>
+        </div>
+
+        <div id="ModelCerere" class="tabcontent">
+          <p>Descarca acord de prelucrare a datelor cu caracter personal</p>
+          <a href={acord_gdpr}>Download (pdf)</a>
+          <p>Descarca model cerere client casnic nou</p>
+          <p>Download (pdf)</p>
+          <p>Descarca model cerere client casnic existent</p>
+          <p>Download (pdf)</p>
+          <p>Descarca model cerere client noncasnic nou</p>
+          <p>Download (pdf)</p>
+          <p>Descarca model cerere client noncasnic existent</p>
+          <p>Download (pdf)</p>
+          <p>Descarca contract client casnic</p>
+          <p>Download (pdf)</p>
+          <p>Descarca contract client noncasnic</p><p>Download (pdf)</p><p>
+            Descarca contract client casnic serviciu universal
+          </p><p>Download (pdf)</p><p>
+            Descarca notificare privind incetarea contractului de furnizare a
+            energiei electrice client casnic
+          </p><p>Download (pdf)</p><p>
+            Descarca notificare privind incetarea contractului de furnizare a
+            energiei electrice client noncasnic
+          </p><p>Download (pdf)</p><p>
+            Descarca Declaratie pe proprie răspundere privind folosința locului
+            de consum
+          </p><p>Download (pdf)</p>
+        </div>
+
+        <div id="Chestionar" class="tabcontent">
+          <h2>Chestionarul energetic poate fi accesat de aici</h2>
+          <a href="" class="btn-secondary">Acceseaza chestionarul energetic</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  /* Style the tab */
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+
+    .tab {
+      flex: 0 0 25%;
+      display: flex;
+      border: 1px solid #e6e5e7;
+      background-color: #fcfbfc;
+      flex-direction: column;
+      text-align: left;
+
+      button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        text-align: left;
+
+        &:hover {
+          background-color: #e6e5e7;
+        }
+        &.active {
+          color: #fcfbfc;
+          background-color: #3961a7;
+        }
+      }
+    }
+
+    .contentTabs {
+      flex: 0 0 75%;
+
+      .tabcontent {
+        display: none;
+        border: 1px solid #ccc;
+        border-top: none;
+        padding: 1.5rem 1rem;
+
+        b {
+          margin-bottom: 1.5rem;
+        }
+        p {
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .tabcontent {
+        animation: fadeEffect 1s; /* Fading effect takes 1 second */
+      }
+    }
+  }
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<script is:inline>
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  function openTab(evt, tabName) {
+    // Get all elements with class="tabcontent" and hide them
+    let tabcontent = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    let tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>

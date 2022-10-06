@@ -1,0 +1,40 @@
+@use "./../base/variables.scss" as *;
+@use "./../base/responsive.scss" as *;
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  margin: 1vh 0;
+  border-radius: $br-20;
+  padding: 1rem;
+
+  @include tablet {
+    width: 85vw;
+  }
+
+  @include mobile {
+    width: 70vw;
+  }
+
+  box-shadow: $bs-primary;
+  min-height: 120px;
+
+  img {
+    $size: 50px;
+    width: $size;
+    height: $size;
+    object-fit: contain;
+  }
+
+  .details {
+    padding-left: 5%;
+    .title {
+      font-size: $fs-subtitle;
+      color: $cl-black;
+    }
+    .description {
+      font-size: $fs-content;
+    }
+  }
+}

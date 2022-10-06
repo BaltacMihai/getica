@@ -1,0 +1,79 @@
+@use "./../base/variables.scss" as *;
+@use "./../base/responsive.scss" as *;
+
+.page-home {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  section {
+    padding: 2.5vh 0;
+  }
+
+  .row {
+    justify-content: space-between;
+    margin-right: 0;
+  }
+  .row.responsive {
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+  .center {
+    margin: 0px 5vw;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 30%;
+    align-items: center;
+    @include mobile {
+      flex: 0 0 100%;
+    }
+
+    .titles {
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+
+  .title {
+    font-size: $fs-title;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: $cl-secondary;
+    font-weight: bold;
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  .subtitle {
+    font-size: $fs-subtitle;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .homepageImg {
+    margin-right: -2%;
+    flex: 0 0 50%;
+
+    @include tablet {
+      margin-right: -4%;
+      flex: 0 0 50%;
+      width: 50%;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use "./../base/variables.scss" as *;
+@use "./../base/responsive.scss" as *;
+@use "./../base/button.scss" as *;
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  box-shadow: $bs-primary;
+  padding: 1rem;
+  p {
+    padding: 1rem 0;
+  }
+
+  a:not(.email) {
+    @extend .btn-secondary;
+    padding: 1rem;
+  }
+}
