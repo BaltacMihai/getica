@@ -13,4 +13,4 @@ title: "Informatii actualizate la data de 01.09.2022 privind aplicarea schemei d
 (2) Beneficiarii care se încadrează în prevederile art. 1 alin. (1) lit. c)-e), care nu au depus solicitarea însoțită de o declarație pe propria răspundere în termenul prevăzut la alin. (1), precum și cei înființați după data de 1 septembrie 2022 beneficiază de prevederile prezentei ordonanțe de urgență începând cu data de 1 a lunii următoare depunerii acestora la furnizor.
 Documentele necesare le regasiti mai jos:
 
-[Anexa 4-1](./getica/Anexa-4-1.pdf)
+[Anexa 4-1](./Anexa-4-1.pdf)
