@@ -1,0 +1,154 @@
+---
+import Layout from "../layouts/Layout.astro";
+import solarPanel from "../assets/images/servicii_energie_electrica/solarPanel.jpg";
+
+const content = {
+  heroSection: {
+    image: solarPanel,
+    title: "Energie Electrica",
+  },
+  section: {
+    title: "Chestionar energetic",
+    tutorial: {
+      header: "Cum completez formularul?",
+      downloadPDF: {
+        title: "DOWNLOAD CHESTIONAR (PDF)",
+        link: "./chestionar_energetic.pdf",
+      },
+      downloadDOC: {
+        title: "DOWNLOAD CHESTIONAR (DOC)",
+        link: "./chestionar_energetic.doc",
+      },
+      steps: [
+        {
+          title: "PASUL 1",
+          content:
+            " Descarcati formularul de mai sus in format PDF sau DOC (Microsoft Office)",
+        },
+        { title: "PASUL 2", content: "Completati formularul" },
+        {
+          title: "PASUL 3",
+          content:
+            " UPLOAD formular folosind comanda  de mai jos Completati datele de contact",
+        },
+        {
+          title: "PASUL 4",
+          content: "Accesati butonul 'Trimite formular'  completat",
+        },
+      ],
+    },
+  },
+};
+---
+
+<Layout title="Chestionar energetic">
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <h2>{content.section.title}</h2>
+    <div class="wrapper">
+      <div class="tutorial">
+        <h2>{content.section.tutorial.header}</h2>
+        <a
+          href={content.section.tutorial.downloadPDF.link}
+          class="btn-secondary">{content.section.tutorial.downloadPDF.title}</a
+        >
+        <a
+          href={content.section.tutorial.downloadDOC.link}
+          class="btn-secondary">{content.section.tutorial.downloadDOC.title}</a
+        >
+    {
+         content.section.tutorial.steps?.map((step) => ( 
+            <h3>{step.title}</h3>
+            <p>{step.content}</p>
+            )
+        )
+    }
+       
+      </div>
+      <div class="form">
+        <h2>Formular online - chestionar energetic</h2>
+        <div class="form-element">
+          <label for="name">Numele companiei (obligatoriu)</label>
+          <input type="text" title="name" id="name" />
+        </div>
+        <div class="form-element">
+          <label for="email">Adresa de email (obligatoriu)</label>
+          <input type="email" title="email" id="email"/>
+        </div>
+        <div class="form-element">
+          <label for="phone">Telefon (obligatoriu)</label>
+          <input type="text" title="phone" id="phone"/>
+        </div>
+        <div class="form-element">
+          <label for="adress">Adresa locului de consum (obligatoriu)</label>
+          <input type="text" title="adress" id="adress"/>
+        </div>
+        <div class="form-element">
+          <label for="activityProfil">Profil activitate (obligatoriu)</label>
+          <input type="text" title="activityProfil" id="activityProfil"/>
+        </div>
+        <div class="btn-primary" onclick="generateEmail()">Genereaza email</div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline>
+
+function generateEmail(){
+
+let name = document.getElementById("name");
+let email = document.getElementById("email");
+let phone = document.getElementById("phone");
+let adress = document.getElementById("adress");
+let activityProfil = document.getElementById("activityProfil");
+let ourEmail = "test@test.com";
+
+let generatedEmail = `mailto:${ourEmail}?subject=%5BChestionar%20Energetic%5D%20Cerere%20${name.value}%20&body=Buna%20ziua%2C%0D%0A%0D%0ANumele%20meu%20este%20${name.value}%20si%20doresc%20sa%20schimb%20furnizorul%20catre%20dumneavoastra.%0D%0AMa%20ocup%20cu%20${activityProfil.value}.%0D%0A%0D%0ADatele%20mele%20de%20contact%20sunt%20urmatoarele%3A%0D%0ANumarul%20de%20telefon%3A%20${phone.value}%0D%0AEmailul%20este%3A%20${email.value}%0D%0AAdresa%20este%20${adress.value}%0D%0A%0D%0A%0D%0A--%20Acest%20mail%20este%20generat%20automat%20--`
+
+window.open(generatedEmail);
+
+}
+
+</script>
+
+<style lang="scss">
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .tutorial {
+      flex: 0 0 50%;
+
+      h3 {
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .form {
+      flex: 0 0 45%;
+      display: flex;
+      flex-direction: column;
+      .form-element {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        label {
+          padding: 0.25rem 0;
+        }
+        input {
+          padding: 0.5rem;
+          width: 100%;
+        }
+      }
+
+      .btn-primary {
+        width: fit-content;
+      }
+    }
+  }
+</style>
