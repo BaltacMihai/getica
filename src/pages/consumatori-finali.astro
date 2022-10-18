@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+import solarPanel from "../assets/images/servicii_energie_electrica/solarPanel.jpg";
+
+const content = {
+  heroSection: {
+    image: solarPanel,
+    title: "Consumatori finali",
+  },
+  section: {
+    title: "Consumatori finali",
+  },
+  data: [
+    {
+      title: "CHESTIONAR ENERGETIC",
+      documents: [
+        {
+          title: "DOWNLOAD CHESTIONAR (DOC)",
+          link: "./chestionar_energetic.doc",
+        },
+        {
+          title: "DOWNLOAD CHESTIONAR (DOC)",
+          link: "./chestionar_energetic.doc",
+        },
+      ],
+    },
+    {
+      title: "CHESTIONAR ENERGETIC",
+      documents: [
+        {
+          title: "DOWNLOAD CHESTIONAR (DOC)",
+          link: "./chestionar_energetic.doc",
+        },
+        {
+          title: "DOWNLOAD CHESTIONAR (DOC)",
+          link: "./chestionar_energetic.doc",
+        },
+      ],
+    },
+  ],
+};
+---
+
+<Layout title="Procesul de schimbare a furnizorului">
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <h2>
+      {content.section.title}
+    </h2>
+
+    <div class="wrapper">
+
+        {
+            content.data.map((accordion => {
+                return(
+                  <button class="accordion">{accordion.title}</button>
+                  <div class="panel">
+                    { accordion.documents.map((document) =>{
+                       return(      
+                     <a href={document.link} class="btn-secondary my">{document.title}</a>)
+                    })  }
+                  </div>
+                )
+            }))
+        }
+      
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+
+  .my{
+margin: 1rem 0;
+  }
+  .wrapper {
+    width: 100%;
+
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      border: 1px solid rgba(204, 204, 204, 0.445);
+
+      &.active {
+        color: #fcfbfc;
+        background-color: #3961a7;
+
+        &:hover:not(.active) {
+          background-color: #e6e5e7;
+        }
+      }
+    }
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border: 1px solid rgba(204, 204, 204, 0.445);
+    }
+  }
+</style>
+
+<script is:inline>
+  let acc = document.getElementsByClassName("accordion");
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>

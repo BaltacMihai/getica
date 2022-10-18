@@ -5,6 +5,10 @@
   padding: 1rem 2rem;
   text-decoration: none;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
 
   &:hover {
     filter: brightness(90%);
