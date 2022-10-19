@@ -66,7 +66,7 @@ export const TEXTS = {
         title: "Servicii",
         callToAction: {
           text: "Solicita oferta personalizata",
-          link: "#",
+          link: "mailto:someone@yoursite.com",
         },
         rightPart: {
           title: "Clienti Casnici",

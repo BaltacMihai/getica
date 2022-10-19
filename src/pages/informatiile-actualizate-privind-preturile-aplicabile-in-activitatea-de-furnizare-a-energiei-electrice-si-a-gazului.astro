@@ -58,13 +58,13 @@ function makeid(length) {
           let generatedId = makeid(5);
           return (
             <div class="images" onclick={`openModal("${generatedId}")`}>
-              <p>{image.title}</p>
               <img
                 id={generatedId}
                 src={image.src}
                 alt={image.title}
                 style="width:100%;max-width:300px"
               />
+              <p>{image.title}</p>
             </div>
           );
         })
@@ -84,14 +84,18 @@ function makeid(length) {
     width: 100%;
     margin: 0px 5vw;
     padding-top: 7.5rem;
-    text-align: start;
+    align-items: flex-start;
+
+    a {
+      margin: 2rem 0;
+    }
   }
   .wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: stretch;
   }
 
   .images {
@@ -102,6 +106,8 @@ function makeid(length) {
     flex-direction: column;
     align-items: center;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+
+    flex: 0 0 30%;
 
     p {
       font-size: 1rem;
