@@ -25,7 +25,7 @@ const content = {
       title: "Prețuri de tranzacționare piața GasForward si SPOT",
     },
     {
-      src: "./image.png",
+      src: "./consumatori-1.jpg",
       title:
         "Informaţiile actualizate privind tarifele aplicabile în activitatea de furnizare a gazelor naturale",
     },
@@ -48,12 +48,11 @@ function makeid(length) {
     <h1>
       {content.section.title}
     </h1>
-
+    <a
+      href="./Informatii-actualizate-prinvind-preturile-2022.pdf"
+      class="btn-secondary">Descarca datele in format PDF</a
+    >
     <div class="wrapper">
-      <a
-        href="./Informatii-actualizate-prinvind-preturile-2022.pdf"
-        class="btn-secondary">Descarca datele in format PDF</a
-      >
       {
         content.data.map((image) => {
           let generatedId = makeid(5);
