@@ -2,7 +2,8 @@
 @use "./../base/responsive.scss" as *;
 @use "./../base/button.scss" as *;
 
-.notification {
+.notification,
+.informatiiUtile {
   display: flex;
   flex-direction: column;
   box-shadow: $bs-primary;

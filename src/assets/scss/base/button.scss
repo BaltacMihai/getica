@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   width: max-content;
+  cursor: pointer;
 
   @include mobile {
     margin: 0 auto;

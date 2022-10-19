@@ -1,12 +1,12 @@
 ---
-title: "Informatii actualizate la data de 01.09.2022 privind aplicarea schemei de compensare/plafonare pentru consumul de energie electrica si gaze naturale"
+date: 10/19/2022
 ---
 
 # Reducem costurile energiei electrice
 
 Ofertă tip de furnizare energie electrică clienti noncasnici valabila de la 01.09.22 pana la 30.09.22
 
-[DESCĂRCĂ OFERTA](./homepage/notificari/Anexa-4-1.pdf)
+[DESCĂRCĂ OFERTA](./homepage/notificari/oferta_noncasnic0922.pdf)
 
 <p class="email">
 Pentru detalii va rog sa ne contactati la adresa: ofertare.noncasnic@getica95.ro

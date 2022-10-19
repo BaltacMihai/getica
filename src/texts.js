@@ -115,6 +115,7 @@ export const TEXTS = {
       },
       fourthSection: {
         title: "Notificari",
+        seeMore: "Vedeti mai multe",
       },
     },
     politicaDeConfidentialitate: {

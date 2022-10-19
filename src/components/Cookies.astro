@@ -83,8 +83,7 @@ const content = TEXTS.cookies;
   }
 
   function acceptCookie() {
-    document.cookie =
-      "cookieStatus=accepted; expires=Thu, 18 Dec 2024 12:00:00 UTC";
+    document.cookie = "cookieStatus=accepted;";
     let cookie = document.getElementById("cookie");
     let openCookie = document.getElementById("openCookie");
 
@@ -93,8 +92,7 @@ const content = TEXTS.cookies;
   }
 
   function rejectCookie() {
-    document.cookie =
-      "cookieStatus=rejected; expires=Thu, 18 Dec 2024 12:00:00 UTC";
+    document.cookie = "cookieStatus=rejected; ";
     let cookie = document.getElementById("cookie");
     let openCookie = document.getElementById("openCookie");
 
@@ -103,8 +101,7 @@ const content = TEXTS.cookies;
   }
 
   function deleteCookie() {
-    document.cookie =
-      "cookieStatus=rejected; expires=Thu, 18 Dec 2024 12:00:00 UTC";
+    document.cookie = "cookieStatus=rejected;  ";
     let cookie = document.getElementById("cookie");
     let openCookie = document.getElementById("openCookie");
 

@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import homepageImg from "../assets/images/homepage/homepage_img.svg";
 import { TEXTS } from "../texts";
 import Notification from "../components/Notification.astro";
+import InformatiiUtile from "../components/InformatiiUtile.astro";
 
 const content = TEXTS.pages.homepage;
 
@@ -67,26 +68,57 @@ const notificari = await Astro.glob("./../data/homepage/Notificari/*.md");
     </section>
     <section>
       <div class="col-10 center">
-        <div class="title">{content.thirdSection.title}</div>
+        <div class="title">{content.fourthSection.title}</div>
 
         {
-          informatiiUtile.map((element) => {
-            return <Notification content={element} />;
-          })
+          notificari
+            .sort((a, b) => {
+              const firstData = new Date(a.frontmatter.date);
+              const secondData = new Date(b.frontmatter.date);
+
+              if (secondData > firstData) {
+                return 1;
+              } else {
+                return -1;
+              }
+            })
+            .map((element) => {
+              return <Notification content={element} />;
+            })
         }
+
+        <p
+          class="btn-secondary"
+          onclick="displayAllNotifications()"
+          id="seeMoreNotifications"
+        >
+          {content.fourthSection.seeMore}
+        </p>
       </div>
     </section>
     <section>
       <div class="col-10 center">
-        <div class="title">{content.fourthSection.title}</div>
+        <div class="title">{content.thirdSection.title}</div>
 
         {
-          notificari.map((element) => {
-            return <Notification content={element} />;
-          })
+          informatiiUtile
+            .sort((a, b) => {
+              const firstData = new Date(a.frontmatter.date);
+              const secondData = new Date(b.frontmatter.date);
+
+              if (secondData > firstData) {
+                return 1;
+              } else {
+                return -1;
+              }
+            })
+            .map((element) => {
+              return <InformatiiUtile content={element} />;
+            })
         }
       </div>
     </section>
+
     <div id="myModal" class="modal">
       <span class="close">&times;</span>
 
@@ -166,4 +198,19 @@ const notificari = await Astro.glob("./../data/homepage/Notificari/*.md");
     let modal = document.getElementById("myModal");
     modal.style.display = "none";
   };
+
+  let notification = document.getElementsByClassName("notification");
+
+  for (let i = 2; i < notification.length; i++) {
+    notification[i].style.display = "none";
+  }
+
+  function displayAllNotifications() {
+    for (let i = 0; i < notification.length; i++) {
+      notification[i].style.display = "flex";
+    }
+
+    let seeMoreNotifications = document.getElementById("seeMoreNotifications");
+    seeMoreNotifications.style.display = "none";
+  }
 </script>
