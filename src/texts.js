@@ -153,5 +153,36 @@ export const TEXTS = {
         "Remedierea în cel mai scurt timp a eventualelor mici erori prezente din diverse motive pe website-ul www.getica95.ro reprezintă o prioritate constantă pentru echipa GETICA 95 COM.",
       ],
     },
+    informatiileActualizatePrivindPreturileAplicabileInActivitateaDeFurnizareAEnergieiElectriceSiAGazului:
+      {
+        section: {
+          title:
+            "Informaţiile actualizate privind preţurile aplicabile în activitatea de furnizare a energiei electrice",
+        },
+        data: [
+          {
+            src: "./pzu-1.jpg",
+            title: "Evolutie PZU 2021-2022",
+          },
+          {
+            src: "./opcom-1.jpg",
+            title: "Pretul mediu de tranzactionare pe OPCOM",
+          },
+          {
+            src: "./tarife-transport2.jpg",
+            title:
+              "Tarife pentru distributie si transport si alte taxe energie electrica",
+          },
+          {
+            src: "./preturi-gaz-1.jpg",
+            title: "Prețuri de tranzacționare piața GasForward si SPOT",
+          },
+          {
+            src: "./consumatori-1.jpg",
+            title:
+              "Informaţiile actualizate privind tarifele aplicabile în activitatea de furnizare a gazelor naturale",
+          },
+        ],
+      },
   },
 };
