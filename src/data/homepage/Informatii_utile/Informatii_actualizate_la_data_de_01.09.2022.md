@@ -1,8 +1,9 @@
 ---
 title: "Informatii actualizate la data de 01.09.2022 privind aplicarea schemei de compensare/plafonare pentru consumul de energie electrica si gaze naturale"
+date: 06.12.2018
 ---
 
-Informatii actualizate la data de 01.09.2022 privind aplicarea schemei de compensare/plafonare pentru consumul de energie electrica si gaze naturale
+# Informatii actualizate la data de 01.09.2022 privind aplicarea schemei de compensare/plafonare pentru consumul de energie electrica si gaze naturale
 
 Începând cu data de 01.09.2022, schema de compensare/plafonare a energiei electrice/gaze naturale se modifică conform ORDONANȚEI DE URGENȚĂ nr. 119 din 1 septembrie 2022 pentru modificarea și completarea Ordonanței de urgență a Guvernului nr. 27/2022 privind măsurile aplicabile clienților finali din piața de energie electrică și gaze naturale în perioada 1 aprilie 2022-31 martie 2023, precum și pentru modificarea și completarea unor acte normative din domeniul energiei. Pentru mai multe informatii accesati link-ul (LINK AICI)
 

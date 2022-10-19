@@ -4,6 +4,7 @@ import consultantaNoncasnic from "./assets/images/homepage/consultanta-noncasnic
 import grafice from "./assets/images/homepage/grafice.png";
 import matering from "./assets/images/homepage/matering.png";
 import analiza from "./assets/images/homepage/analiza.png";
+import logo from "./assets/images/logo.png";
 
 export const TEXTS = {
   cookies: {
@@ -20,12 +21,44 @@ export const TEXTS = {
   },
   pages: {
     homepage: {
+      modal: {
+        image: {
+          title: "Logo",
+          src: logo,
+        },
+        text: [
+          {
+            text: "Stimate partener,",
+          },
+          {
+            text: "Vă aducem la cunoștință faptul că, prin Încheierea de ședință pronunțată la data de 30.06.2021, în dosarul de instanță nr. 1666/114/2021 înregistrat pe rolul Tribunalului Buzău, Secția a II-a Civilă, de Contencios Administrativ și Fiscal, a fost deschisă procedura generală de insolvență asupra societății GETICA 95 COM SRL, iar societatea își păstrează dreptul de a-şi conduce activitatea, de a-şi administra bunurile din avere şi de a dispune de acestea, sub supravegherea administratorui judiciar provizoriu desemnat – practicianul în insolvenţă Prime Insolv Practice SPRL.",
+          },
+          {
+            text: "Stadiul dosarului de instanță 1666/114/2021 poate fi verificat pe acest",
+          },
+          {
+            link: "https://portal.just.ro/114/SitePages/Dosar.aspx?id_dosar=11400000000079290&id_inst=114",
+            text: "link",
+          },
+          {
+            text: "Vă asigurăm de toată disponibilitatea noastră în lămurirea oricăror aspecte pe care le considerați necesare și ne manifestăm intenția de a continua colaborarea, cu respecatrea dispozițiilor legale în vigoare.",
+          },
+          {
+            text: "Atașat regăsiți certificatul de grefă, care atestă starea de insolvență.",
+          },
+
+          {
+            link: "./certificat-grefa-getica.pdf",
+            text: "Vezi Certificat Grefa Getica95",
+          },
+        ],
+      },
       firstSection: {
         title: "Getica 95",
         subtitle: "Reducem costurile energiei electrice",
         callToAction: {
           text: "Afla mai mult",
-          link: "",
+          link: "./informatiile-actualizate-privind-preturile-aplicabile-in-activitatea-de-furnizare-a-energiei-electrice-si-a-gazului",
         },
       },
 

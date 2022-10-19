@@ -1,5 +1,6 @@
 ---
 title: "Informatii actualizate la data de 01.09.2022 privind aplicarea schemei de compensare/plafonare pentru consumul de energie electrica si gaze naturale"
+date: 06.12.2018
 ---
 
 # Informatii actualizate la data de 01.09.2022 privind aplicarea schemei de compensare/plafonare pentru consumul de energie electrica si gaze naturale

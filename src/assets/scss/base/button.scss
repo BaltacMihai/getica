@@ -1,5 +1,5 @@
 @use "./../base/variables.scss" as *;
-
+@use "./responsive.scss" as *;
 %btn-common {
   border-radius: $br-10;
   padding: 1rem 2rem;
@@ -10,6 +10,9 @@
   justify-content: center;
   width: max-content;
 
+  @include mobile {
+    margin: 0 auto;
+  }
   &:hover {
     filter: brightness(90%);
   }
