@@ -10,9 +10,10 @@
   background-color: $cl-white;
   z-index: 9999;
 
-  @include mobile {
-    width: 85% !important;
+  @include tablet {
+    margin: 0;
   }
+
   .icon {
     width: 200px;
   }
@@ -24,6 +25,7 @@
     display: none;
     @include tablet {
       display: flex;
+      margin-right: 2rem;
     }
   }
 

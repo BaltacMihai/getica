@@ -1,0 +1,113 @@
+---
+import { TEXTS } from "../texts";
+import setting from "./../assets/images/setting.svg";
+import { BASE_URL } from "../URL";
+
+const content = TEXTS.cookies;
+---
+
+<div class="cookies" id="cookie">
+  <p class="text">
+    {content.text}
+  </p>
+  <div class="actions">
+    <a class="btn-secondary" href={BASE_URL + "politica-de-confidentialitate"}>
+      {content.links.politicaDeConfidentialitate.text}
+    </a>
+    <p class="btn-secondary" onclick="rejectCookie()">
+      {content.links.refuz.text}
+    </p>
+    <p class="btn-primary" onclick="acceptCookie()">
+      {content.links.accept.text}
+    </p>
+  </div>
+</div>
+
+<img
+  src={setting}
+  alt="cookiesModifier"
+  id="openCookie"
+  onclick="deleteCookie()"
+/>
+
+<style lang="scss">
+  .cookies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: #fcfbfc;
+    z-index: 9999;
+    padding: 1rem 0;
+
+    .text {
+      padding: 1rem 5rem;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        cursor: pointer;
+      }
+    }
+  }
+  #openCookie {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 26px;
+    cursor: pointer;
+    z-index: 99999;
+  }
+</style>
+
+<script is:inline>
+  let currentCookies = document.cookie;
+
+  if (
+    currentCookies.includes("cookieStatus=accepted") ||
+    currentCookies.includes("cookieStatus=rejected")
+  ) {
+    let cookie = document.getElementById("cookie");
+    let openCookie = document.getElementById("openCookie");
+
+    cookie.style.display = "none";
+    openCookie.style.display = "flex";
+  }
+
+  function acceptCookie() {
+    document.cookie =
+      "cookieStatus=accepted; expires=Thu, 18 Dec 2024 12:00:00 UTC";
+    let cookie = document.getElementById("cookie");
+    let openCookie = document.getElementById("openCookie");
+
+    cookie.style.display = "none";
+    openCookie.style.display = "flex";
+  }
+
+  function rejectCookie() {
+    document.cookie =
+      "cookieStatus=rejected; expires=Thu, 18 Dec 2024 12:00:00 UTC";
+    let cookie = document.getElementById("cookie");
+    let openCookie = document.getElementById("openCookie");
+
+    cookie.style.display = "none";
+    openCookie.style.display = "flex";
+  }
+
+  function deleteCookie() {
+    document.cookie =
+      "cookieStatus=rejected; expires=Thu, 18 Dec 2024 12:00:00 UTC";
+    let cookie = document.getElementById("cookie");
+    let openCookie = document.getElementById("openCookie");
+
+    cookie.style.display = "flex";
+    openCookie.style.display = "none";
+  }
+</script>

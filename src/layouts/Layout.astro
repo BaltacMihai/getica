@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar.astro";
 import "./../assets/scss/site.scss";
 import logo from "./../assets/images/logo.png";
+import Cookies from "../components/Cookies.astro";
 
 export interface Props {
   title?: string;
@@ -22,6 +23,9 @@ const { title = "Getica 95" } = Astro.props as Props;
   </head>
   <body>
     <Navbar />
-    <slot />
+    <main>
+      <slot />
+    </main>
+    <Cookies />
   </body>
 </html>
