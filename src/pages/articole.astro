@@ -1,0 +1,209 @@
+---
+import searchIcon from "./../assets/images/search-normal.svg";
+import filterIcon from "./../assets/images/filter.svg";
+import Layout from "../layouts/Layout.astro";
+
+const articole = await Astro.glob("./../data/articole/*.md");
+---
+
+<Layout title="Procesul de schimbare a furnizorului">
+  <div class="container">
+    <h1 class="title">Articole</h1>
+    <div class="wrapper">
+      <div class="filters">
+        <div class="relative">
+          <img src={searchIcon} alt="searchIcon" />
+          <input type="text" id="searchBar" oninput="search()" />
+        </div>
+
+        <div class="relative">
+          <img src={filterIcon} alt="filterIcon" />
+
+          <select id="filter" onchange="applyFilter()">
+            <option value="#" selected="selected">All Articles</option>
+
+            <option value="Comunicate">Comunicate</option>
+            <option value="Diverse">Diverse</option>
+            <option value="Energie">Energie</option>
+            <option value="GazeNaturale">Gaze naturale</option>
+            <option value="/">Fara categorie</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="articles">
+        {
+          articole
+            .sort((a, b) => {
+              const firstData = new Date(a.frontmatter.date);
+              const secondData = new Date(b.frontmatter.date);
+
+              if (secondData > firstData) {
+                return 1;
+              } else {
+                return -1;
+              }
+            })
+            .map((articol) => {
+              return (
+                <a
+                  href={articol.frontmatter.link}
+                  class="article"
+                  data-tag={articol.frontmatter.category}
+                  data-title={articol.frontmatter.title}
+                >
+                  <img src={articol.frontmatter.image} alt="" />
+                  <h2 class="title">{articol.frontmatter.title}</h2>
+                  <p class="date">{articol.frontmatter.date}</p>
+
+                  <p class="text">{articol.frontmatter.description}</p>
+                </a>
+              );
+            })
+        }
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline>
+  function search() {
+    let searchedWord = document.getElementById("searchBar");
+    let articles = document.getElementsByClassName("article");
+
+    if (searchedWord.value.length === 0)
+      for (let i = 0; i < articles.length; i++) {
+        articles[i].style.display = "flex";
+      }
+    else {
+      for (let i = 0; i < articles.length; i++) {
+        if (!articles[i].dataset.title.includes(searchedWord.value))
+          articles[i].style.display = " none";
+        else {
+          articles[i].style.display = " flex";
+        }
+      }
+    }
+  }
+
+  function applyFilter() {
+    let filter = document.getElementById("filter");
+    let articles = document.getElementsByClassName("article");
+
+    for (let i = 0; i < articles.length; i++) {
+      if (!articles[i].dataset.tag.includes(filter.value))
+        articles[i].style.display = " none";
+      else {
+        articles[i].style.display = " flex";
+      }
+    }
+  }
+</script>
+
+<style lang="scss">
+  .container {
+    padding-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+
+      .filters {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+
+        * {
+          padding: 0.25rem;
+        }
+
+        input,
+        input:is(:hover, :active, :focus) {
+          border: none;
+          border-bottom: 1px solid black;
+        }
+
+        .relative {
+          input,
+          select {
+            width: 100%;
+            padding-left: 24px;
+            font-size: 1rem;
+          }
+          &:first-child {
+            flex: 0 0 75%;
+
+            input {
+              padding-left: 24px;
+              font-size: 1rem;
+            }
+            img {
+              position: absolute;
+              width: 16px;
+            }
+          }
+          &:last-child {
+            flex: 0 0 20%;
+            select {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+            }
+            img {
+              position: absolute;
+              width: 16px;
+            }
+          }
+        }
+      }
+
+      .articles {
+        display: flex;
+        padding-top: 2.5rem;
+        gap: 4%;
+        flex-wrap: wrap;
+        width: 90%;
+
+        .article {
+          flex: 0 0 25%;
+          display: flex;
+          flex-direction: column;
+          display: flex;
+          flex-direction: column;
+          box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+
+          text-decoration: none;
+          color: black;
+
+          img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+          }
+          .title {
+            margin-top: 1rem;
+            padding: 0 1rem;
+          }
+          .date {
+            text-align: right;
+            margin: 1rem;
+            color: #555;
+          }
+
+          .text {
+            padding: 0 1rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+</style>

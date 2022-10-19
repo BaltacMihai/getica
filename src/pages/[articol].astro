@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const articole = await Astro.glob("./../data/articole/*.md");
+
+  return articole.map((articol) => ({
+    params: {
+      articol: articol.frontmatter.link,
+    },
+    props: {
+      articol,
+    },
+  }));
+}
+
+const { Content, frontmatter } = Astro.props.articol;
+---
+
+<Layout title={frontmatter.title}>
+  <div class="article">
+    <div class="header">
+      <img src={frontmatter.image} alt={frontmatter.title + " title"} />
+      <div class="details">
+        <div class="col">
+          <h1 class="title">{frontmatter.title}</h1>
+          <p class="date">{frontmatter.date}</p>
+        </div>
+
+        <p class="sources">
+          Sursa: <a href={frontmatter.sursa}>{frontmatter.titluSursa}</a>
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <Content />
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .article {
+    padding: 0 10rem;
+    padding-top: 7.5rem;
+
+    .header {
+      display: flex;
+      .details {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .title {
+          margin-bottom: 1rem;
+        }
+        .sources {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .content {
+      margin: 2vh auto;
+      align-items: baseline;
+      width: 100%;
+    }
+  }
+</style>
