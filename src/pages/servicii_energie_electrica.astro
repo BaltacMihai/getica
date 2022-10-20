@@ -1,26 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import solarPanel from "../assets/images/servicii_energie_electrica/solarPanel.jpg";
-
-const content = {
-  heroSection: {
-    image: solarPanel,
-    title: "Energie Electrica",
-  },
-  section: {
-    title: "Servicii energie electrica",
-    data: [
-      "Analiză preliminară gratuită în cadrul căreia se clarifică procedura de schimbare a furnizorului, se stabilesc condițiile viitorului contract reciproc avantajoase;",
-      "Încheierea de contracte pentru punctele de consum ale clientului cu societățile de distribuție energie electricădin zona unde se localizează acestea, precum si cu societatea de transport Transelectrica;",
-      "Consultanță privind implementarea măsurilor de reducere a consumului de energie electrică;",
-      "Întocmirea de prognoze de consum utilizând metode dinamice de prognoză a curbei de sarcină (regresie liniară sau rețele neuronale artificiale);",
-      "Asigurarea posibilității consumatorului de a-și actualiza prognozele de consum, precum și compensarea abaterilor de la prognoză;",
-      "Asigurarea suportului tehnic permanent, gestionarea reclamațiilor privind calitatea serviciului de furnizare, intermedierea disfuncționalităților din relația consumator - operator de distribuție ;",
-      "Posibilitatea montării la client de sisteme de măsură pentru monitorizarea consumului în timp real (transmiterea informațiilor prin sisteme GSM);",
-      "Posibilitatea de încheiere a unor contracte de metering (transmiterea datelor orare de consum zilnic) cu operatorii de distribuţie, la cererea consumatorilor, aceștia putând urmări mai bine consumurile și costurile sale;",
-    ],
-  },
-};
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.serviciiEnergieElectrica;
 ---
 
 <Layout title="Servicii energie electrica">
