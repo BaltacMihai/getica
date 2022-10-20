@@ -15,6 +15,13 @@
 
   a:not(.email) {
     @extend .btn-secondary;
+    width: auto;
+    display: inline-flex;
     padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  img {
+    width: 100%;
   }
 }
