@@ -631,6 +631,48 @@ export const TEXTS = {
         },
       ],
     },
+    chestionarEnergetic: {
+      heroSection: {
+        image: solarPanel,
+        title: "Energie Electrica",
+      },
+      section: {
+        title: "Chestionar energetic",
+        tutorial: {
+          header: "Cum completez formularul?",
+          downloadPDF: {
+            title: "DOWNLOAD CHESTIONAR (PDF)",
+            link: "./chestionar_energetic.pdf",
+          },
+          downloadDOC: {
+            title: "DOWNLOAD CHESTIONAR (DOC)",
+            link: "./chestionar_energetic.doc",
+          },
+          steps: [
+            {
+              title: "PASUL 1",
+              content:
+                " Descarcati formularul de mai sus in format PDF sau DOC (Microsoft Office)",
+            },
+            { title: "PASUL 2", content: "Completati formularul" },
+            {
+              title: "PASUL 3",
+              content:
+                "Completati datele de contact din formularul de pe aceasta pagina",
+            },
+            {
+              title: "PASUL 4",
+              content: "Accesati butonul 'Genereaza email'  completat",
+            },
+            {
+              title: "PASUL 5",
+              content:
+                "In mailul creat, atasati formularul de la pasul 1, completat",
+            },
+          ],
+        },
+      },
+    },
   },
 };
 
