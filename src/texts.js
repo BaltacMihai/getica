@@ -1206,15 +1206,15 @@ export const TEXTS = {
           title: "ETICHETA ENERGIE GETICA 95 - 2019",
         },
         {
-          src: "./Eticheta-energiei-2017.jpg",
+          src: "./Eticheta-energie-2017.jpg",
           title: "ETICHETA ENERGIE GETICA 95 - 2017",
         },
         {
-          src: "./Eticheta-energiei-2016.jpg",
+          src: "./Eticheta-energie-2016.jpg",
           title: "ETICHETA ENERGIE GETICA 95 - 2016",
         },
         {
-          src: "./Eticheta-energiei-2015.jpg",
+          src: "./Eticheta-energie-2015.jpg",
           title: "ETICHETA ENERGIE GETICA 95 - 2015",
         },
         {
