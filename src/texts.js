@@ -1843,6 +1843,98 @@ export const TEXTS = {
         },
       ],
     },
+    dateFinanciare: {
+      heroSection: {
+        image: solarPanel,
+        title: "Energie Electrica",
+      },
+      section: {
+        title: "Date financiare Getica 95",
+      },
+      data: [
+        {
+          title: "Bilant 2020",
+          documents: [
+            {
+              title: "Bilant 2020 (PDF)",
+              link: "./Situatii_financiare_Getica95_7562758_31.12.2020_depuse_21.05.2021.pdf",
+            },
+          ],
+        },
+        {
+          title: "Bilant 2019",
+          documents: [
+            {
+              title: "Bilant 2019 (PDF)",
+              link: "./Situatii_financiare_Getica95_7562758_31.12.2019_depus.pdf",
+            },
+          ],
+        },
+        {
+          title: "Bilant 2018",
+          documents: [
+            {
+              title: "Bilant 2018 (PDF)",
+              link: "./Bilant-31.12.2018_GETICA_95.PDF.pdf",
+            },
+          ],
+        },
+        {
+          title: "Bilant 2017",
+          documents: [
+            {
+              title: "Bilant 2017 (PDF)",
+              link: "./Bilant-31.12.2017_GETICA_95.PDF",
+            },
+          ],
+        },
+        {
+          title: "Bilant 2016",
+          documents: [
+            {
+              title: "Bilant 2016 (PDF)",
+              link: "./Bilant_31.12.2016-Getica_95_COM_SRL.PDF",
+            },
+          ],
+        },
+        {
+          title: "Bilant 2015",
+          documents: [
+            {
+              title: "Bilant 2015 (PDF)",
+              link: "./bilant-2015.pdf",
+            },
+          ],
+        },
+        {
+          title: "Bilant 2014",
+          documents: [
+            {
+              title: "Bilant 2014 (PDF)",
+              link: "./Bilant_Dec_2014.pdf",
+            },
+          ],
+        },
+        {
+          title: "Bilant 2013",
+          documents: [
+            {
+              title: "Bilant 2013 (PDF)",
+              link: "./Bilant_31122013.pdf",
+            },
+          ],
+        },
+        {
+          title: "Bilant 2012",
+          documents: [
+            {
+              title: "Bilant 2012 (PDF)",
+              link: "./Bilant_31122012.pdf",
+            },
+          ],
+        },
+      ],
+    },
   },
 };
 
