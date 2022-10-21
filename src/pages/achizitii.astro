@@ -1,31 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import solarPanel from "../assets/images/servicii_energie_electrica/solarPanel.jpg";
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.achizitii;
 
-const content = {
-  heroSection: {
-    image: solarPanel,
-    title: "Energie Electrica",
-  },
-  section: {
-    title: "Achizitii",
-  },
-  data: [
-    {
-      src: "./Eticheta-energiei-2021.jpg",
-      title: "ETICHETA ENERGIE GETICA 95 - 2021",
-    },
-    {
-      src: "./Eticheta-energiei-2021.jpg",
-      title: "ETICHETA ENERGIE GETICA 95 - 2021",
-    },
-    {
-      src: "./Eticheta-energiei-2021.jpg",
-      title: "ETICHETA ENERGIE GETICA 95 - 2021",
-    },
-  ],
-};
-function makeid(length) {
+function makeid(length: number) {
   let result = "";
   let characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

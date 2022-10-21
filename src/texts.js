@@ -1184,6 +1184,49 @@ export const TEXTS = {
         },
       ],
     },
+    achizitii: {
+      heroSection: {
+        image: solarPanel,
+        title: "Energie Electrica",
+      },
+      section: {
+        title: "Achizitii",
+      },
+      data: [
+        {
+          src: "./Eticheta-energiei-2021.jpg",
+          title: "ETICHETA ENERGIE GETICA 95 - 2021",
+        },
+        {
+          src: "./Eticheta-energiei-2020.jpg",
+          title: "ETICHETA ENERGIE GETICA 95 - 2020",
+        },
+        {
+          src: "./Eticheta-energiei-2019.jpg",
+          title: "ETICHETA ENERGIE GETICA 95 - 2019",
+        },
+        {
+          src: "./Eticheta-energiei-2017.jpg",
+          title: "ETICHETA ENERGIE GETICA 95 - 2017",
+        },
+        {
+          src: "./Eticheta-energiei-2016.jpg",
+          title: "ETICHETA ENERGIE GETICA 95 - 2016",
+        },
+        {
+          src: "./Eticheta-energiei-2015.jpg",
+          title: "ETICHETA ENERGIE GETICA 95 - 2015",
+        },
+        {
+          src: "./a-eticheta-2014.jpg",
+          title: "ETICHETA ENERGIE GETICA 95 - 2014",
+        },
+        {
+          src: "./b-Eticheta-2013.jpg",
+          title: "ETICHETA ENERGIE GETICA 95 - 2013",
+        },
+      ],
+    },
   },
 };
 
