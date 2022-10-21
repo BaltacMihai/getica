@@ -6,6 +6,7 @@ import matering from "./assets/images/homepage/matering.png";
 import analiza from "./assets/images/homepage/analiza.png";
 import logo from "./assets/images/logo.png";
 import solarPanel from "./assets/images/servicii_energie_electrica/solarPanel.jpg";
+import anreImage from "./assets/images/anre.png";
 
 export const TEXTS = {
   cookies: {
@@ -1423,6 +1424,104 @@ export const TEXTS = {
             ],
           },
         ],
+      },
+    },
+    dreptulLaInformare: {
+      heroSection: {
+        image: solarPanel,
+        title: "Energie Electrica",
+      },
+      section: {
+        title: "DREPTUL LA INFORMARE AL CONSUMATORILOR",
+        disclaimer:
+          "RAPORTARI PRIVIND ACTIVITATEA DE INFORMARE A CONSUMATORILOR DREPTUL LA INFORMARE AL CONSUMATORULUI DE ENERGIE ELECTRICĂ/GAZE NATURALE",
+        data: [
+          {
+            type: "bold",
+            text: "Stimaţi consumatori,",
+          },
+          {
+            type: "text",
+            text: "Prin lege, aveţi dreptul de a fi informat, în relaţia dumneavoastră cu GETICA 95 COM SRL. Aveţi dreptul să cereţi şi să primiţi, gratuit, înainte de semnarea contractului de furnizare, o copie a acestuia şi a condiţiilor-standard de furnizare a serviciului, după caz.",
+          },
+          {
+            type: "bold",
+            text: "Înainte de semnarea contractului de furnizare, GETICA 95 COM SRL are obligaţia de a vă pune la dispoziţie, în scris, următoarele informaţii:",
+          },
+          {
+            type: "text",
+            text: "- etapele şi documentele necesare pentru încheierea unui contract de furnizare;",
+          },
+          {
+            type: "text",
+            text: "- ofertele tip pentru care puteţi opta, după caz;",
+          },
+          {
+            type: "text",
+            text: "- contractul corespunzător ofertei alese, după caz;",
+          },
+          {
+            type: "text",
+            text: "- preţurile şi tarifele practicate.",
+          },
+          {
+            type: "bold",
+            text: "Verificaţi înainte de semnare dacă, în contractul primit sunt incluse cel puţin următoarele informaţii:",
+          },
+          {
+            type: "text",
+            text: "- identitatea şi adresa furnizorului;",
+          },
+          {
+            type: "text",
+            text: "- serviciul furnizat, nivelurile de calitate a serviciului oferit şi continuitatea în alimentare, precum şi termenul de începere a derulării contractului;",
+          },
+          {
+            type: "text",
+            text: "- preţul/tariful aplicabil;",
+          },
+          {
+            type: "text",
+            text: "- durata contractului, condiţiile de reînnoire/prelungire a contractului şi de întrerupere temporară a alimentării cu energie electrică/gaze naturale, dreptul de denunţare unilaterală a contractului;",
+          },
+          {
+            type: "text",
+            text: "- compensaţiile/despăgubirile şi modalitatea de rambursare aplicabilă în caz de nerespectare a nivelurilor de calitate a serviciului prevăzut prin contract, după caz;",
+          },
+          {
+            type: "text",
+            text: "- penalităţile pe care trebuie să le plătiţi dacă nu respectaţi prevederile contractuale.",
+          },
+
+          {
+            type: "italic",
+            text: "Furnizorul dumneavoastră GETICA 95 COM SRL are obligaţia de a vă oferi, la cerere, un extras tipărit al procedurii de înregistrare, investigare şi soluţionare a petiţiilor primite de la consumatori.",
+          },
+          {
+            type: "italic",
+            text: "Furnizorul dumneavoastră GETICA 95 COM SRL este obligat să vă informeze în legătură cu orice modificări ale preţurilor, modului de facturare, de încasare sau ale altor condiţii din contract, în mod direct şi în timp util, într-un mod transparent şi uşor de înţeles.",
+          },
+          {
+            type: "italic",
+            text: "Dacă nu sunteţi de acord cu modificările anunţate, aveţi dreptul de a renunţa la contract fără a plăti despăgubiri, respectând prevederile contractuale şi legale în vigoare.",
+          },
+          {
+            type: "italic",
+            text: "Dacă dreptul dumneavoastră de a fi informat vă este încălcat, vă puteţi adresa Autorităţii Naţionale de Reglementare în Domeniul Energiei - ANRE.",
+          },
+        ],
+        anre: {
+          imageLink: anreImage,
+          imageText: "Anre Image",
+
+          texts: [
+            "AUTORITATEA NAŢIONALĂ DE REGLEMENTARE ÎN DOMENIUL ENERGIEI",
+            "Str. Constantin Nacu, nr. 3, sector 2, Bucureşti, România",
+            "Telefon: 021.327.81.00; Fax: 021.312.43.65",
+            "Număr gratuit: 0800800410 (apelabil numai în reţeaua Romtelecom)",
+            "E-mail: info@anre.ro; Website: www.anre.ro",
+          ],
+        },
       },
     },
   },
