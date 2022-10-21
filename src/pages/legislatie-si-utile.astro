@@ -97,7 +97,18 @@ const content = TEXTS.pages.legislatieSiUtile;
       }
     }
   }
- 
+  .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: white;
+}
   .panel {
     padding: 1rem 18px;
     background-color: white;

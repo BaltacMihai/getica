@@ -1,0 +1,236 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.acreditari;
+
+function makeid(length: number) {
+  let result = "";
+  let characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
+---
+
+<Layout title="Procesul de schimbare a furnizorului">
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <h2>
+      {content.section.title}
+    </h2>
+
+    <div class="wrapper">
+
+        {
+            content.data.map((accordion => {
+
+                
+                return(
+                  <button class="accordion">{accordion.title}</button>
+                  <div class="panel">
+                    { accordion.documents.map((document) =>{
+                        switch (document.type) {
+                            case "link":
+                            return(      
+                     <a href={document.link} class="btn-secondary my">{document.title}</a>)
+
+                     case "img": 
+                     let generatedId = makeid(5);
+          return (
+            <div class="images" onclick={`openModal("${generatedId}")`}>
+              <p>{document.title}</p>
+              <img
+                id={generatedId}
+                src={document.link}
+                alt={document.title}
+                style="width:100%;max-width:300px"
+              />
+            </div>
+          );
+                        }
+
+                     
+                    })  }
+                  </div>
+                )
+            }))
+        }
+      
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01" />
+    <div id="caption"></div>
+  </div>
+</Layout>
+
+<style lang="scss">
+
+  .my{
+margin: 1rem 0;
+  }
+  .wrapper {
+    width: 100%;
+
+    .accordion {
+      background-color: #fcfbfc;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      border: 1px solid rgba(204, 204, 204, 0.445);
+
+      &.active {
+        color: #fcfbfc;
+        background-color: #3961a7;
+
+
+        &:hover:not(.active) {
+          background-color: #e6e5e7;
+        }
+      }
+    }
+    .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: white;
+}
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      flex-wrap: wrap;
+      overflow: hidden;
+      gap: 1rem;
+      border: 1px solid rgba(204, 204, 204, 0.445);
+    }
+  }
+
+
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+
+    /* Modal Content (Image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+  }
+
+  /* Add Animation - Zoom in the Modal */
+  .modal-content,
+  #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:is(:hover, :focus) {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }
+</style>
+
+<script is:inline>
+  let acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.style.display === "flex") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "flex";
+      }
+    });
+  }
+
+  function openModal(myImg) {
+    let modal = document.getElementById("myModal");
+    let modalImg = document.getElementById("img01");
+    let captionText = document.getElementById("caption");
+    let img = document.getElementById(myImg);
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+  }
+
+  let span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function () {
+    let modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  };
+</script>

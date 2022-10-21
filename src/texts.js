@@ -1626,6 +1626,223 @@ export const TEXTS = {
         ],
       },
     },
+    acreditari: {
+      heroSection: {
+        image: solarPanel,
+        title: "Energie Electrica",
+      },
+      section: {
+        title: "Acreditari",
+      },
+
+      data: [
+        {
+          title: "Certificari TUV",
+          documents: [
+            {
+              type: "img",
+              title: "Tuv 2021",
+              link: "./Tuv-2021.jpg",
+            },
+            {
+              type: "img",
+              title: "Tuv",
+              link: "./Certificate-No.-C-12-2018-21245284-1.jpg",
+            },
+            {
+              type: "img",
+              title: "Tuv",
+              link: "./Getica-Green-2020.jpg",
+            },
+          ],
+        },
+        {
+          title: "Licente ANRE",
+          documents: [
+            {
+              type: "img",
+              title: "Licenta furnizare energie electrica 2020",
+              link: "./licenta-ANRE-2019.jpg",
+            },
+            {
+              type: "img",
+              title: "Licenta furnizare energie electrica",
+              link: "./CCF06122012_0007.jpg",
+            },
+            {
+              type: "img",
+              title: "Licenta furnizare gaze naturale",
+              link: "./licenta-gaze-2018.jpg",
+            },
+          ],
+        },
+        {
+          title: "Decizii si Avize ANRE",
+          documents: [
+            {
+              type: "link",
+              title:
+                "Decizie si Anexa nr. 1960 din 20.11.2019 - GETICA 95 COM (PDF)",
+              link: "./decizia-1960-2019.pdf",
+            },
+            {
+              type: "link",
+              title:
+                "Decizie si Anexa nr. 2521 din 14.12.2015 - GETICA 95 COM (PDF)",
+              link: "./Decizie+anexa_licenta_veche.pdf",
+            },
+            {
+              type: "link",
+              title:
+                "Decizie ANRE nr. 338/2019 pentru desemnare FUI optional GETICA 95 COM  (PDF)",
+              link: "./Decizia_338_din_28.02.2019_desemnare_Getica_FUIop.pdf",
+            },
+            {
+              type: "link",
+              title:
+                "Decizie  ANRE nr. 89/22.01.2020 pentru modificarea deciziei ANRE nr. 338/2019 (PDF)",
+              link: "./Decizie_89_2019.pdf",
+            },
+            {
+              type: "link",
+              title:
+                "Aviz privind pretul pentru Seviciul Universal aplicat FUI optional GETICA 95 COM (PDF)",
+              link: "./Decizie_89_2019.pdf",
+            },
+          ],
+        },
+        {
+          title: "Certificate ISO",
+          documents: [
+            {
+              type: "img",
+              title: "ISO",
+              link: "./ISO-9001-scaled.jpg",
+            },
+            {
+              type: "img",
+              title: "ISO",
+              link: "./ISO-14001-scaled.jpg",
+            },
+          ],
+        },
+        {
+          title: "Certificate SRAC",
+          documents: [
+            {
+              type: "img",
+              title: "SRAC",
+              link: "./iso-9001.jpg",
+            },
+            {
+              type: "img",
+              title: "SRAC",
+              link: "./iso-14001.jpg",
+            },
+          ],
+        },
+        {
+          title: "Diplome GETICA 95",
+          documents: [
+            {
+              type: "img",
+              title: "Topul National al Firmelor",
+              link: "./Top-National-Getica-95-2018.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul Firmelor din Judetul Buzau 2017",
+              link: "./Diploma-Getica-2017.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul de excelenta 2017",
+              link: "./Trofeu-de-Excelenta-Getica-2017.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul de excelenta 2015",
+              link: "./CCF30102015_0003.jpg",
+            },
+            {
+              type: "img",
+              title: "Distinctie de excelenta 2015",
+              link: "./CCF30102015_0002.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul Firmelor din Judetul Buzau 2015",
+              link: "./CCF30102015_0001.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul de excelenta 2008-2012",
+              link: "./getica-95-trofeu-de-excelenta2013.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul Firmelor din Judetul Buzau 2013",
+              link: "./getica-95-topul-firmelor2013.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul Firmelor din Judetul Buzau 2013",
+              link: "./getica-95-topul-firmelor2013.jpg",
+            },
+            {
+              type: "img",
+              title: "Distinctie de excelenta 2013",
+              link: "./getica-95-distinctie-de-excelenta2013.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul Firmelor Judetul Buzau 2012",
+              link: "./CCF06122012_0005.jpg",
+            },
+            {
+              type: "img",
+              title: "Distinctie de excelenta 2012",
+              link: "./CCF06122012_0004.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul Firmelor Judetul Buzau 2010",
+              link: "./CCF06122012_0003.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul Firmelor Judetul Buzau 2009",
+              link: "./CCF06122012_0002.jpg",
+            },
+            {
+              type: "img",
+              title: "Topul Firmelor Judetul Buzau 2011",
+              link: "./CCF06122012_0001.jpg",
+            },
+            {
+              type: "img",
+              title: "Distinctie de excelenta 2011",
+              link: "./CCF06122012_0000.jpg",
+            },
+            {
+              type: "img",
+              title: "Top Afaceri Romania 2012",
+              link: "./4.jpg",
+            },
+            {
+              type: "img",
+              title: "Top Profit  Romania 2012",
+              link: "./2.jpg",
+            },
+            {
+              type: "img",
+              title: "Top Profit  Romania 2012",
+              link: "./1.jpg",
+            },
+          ],
+        },
+      ],
+    },
   },
 };
 
