@@ -9,7 +9,9 @@ body {
   overflow-x: hidden;
   font-family: $font-family;
 }
-
+.overflowHidden {
+  overflow: hidden;
+}
 nav,
 footer,
 main {
