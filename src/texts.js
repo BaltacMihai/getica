@@ -1524,6 +1524,108 @@ export const TEXTS = {
         },
       },
     },
+    eficientaEnergetica: {
+      heroSection: {
+        image: solarPanel,
+        title: "Energie Electrica",
+      },
+      section: {
+        title: "Eficienta energetica",
+        content: "DOCUMENTE INFORMATIVE",
+        visibleData: [
+          "Eficienta energetica inseamna: economisirea energiei, reducerea cheltuielilor, protectia mediului.",
+          "Ceva este mai eficient din punct de vedere energetic daca ofera mai mult pentru aceeasi energie consumata, sau aceleasi servicii pentru un consum mai redus de energie.",
+          "Pentru a avea o perspectiva cât mai larga asupra actiunilor care se pot desfasura in vederea indeplinirii acestor obiective, va rugam sa vizitati pagina noastra de web, unde veti gasi ghiduri, postere, brosuri, care contin informatii privind metodele cele mai bune pe care trebuie sa le folosim, astfel incât rezultatele sa fie economia de energie, costuri reduse si protectia mediului.",
+        ],
+        anreImage: {
+          src: anreImage,
+          alt: "Anre Image",
+        },
+        acordionData: [
+          {
+            title: "INFORMATII DE INTERES PUBLIC",
+            documents: [
+              {
+                type: "link",
+                text: "Info manageri energetici/auditori energetici",
+                link: "http://www.anre.ro/ro/eficienta-energetica/informatii-de-interes-public/info-manageri-energetici-auditori-energetici",
+              },
+
+              {
+                type: "link",
+                text: "Info eficiență energetică",
+                link: "Info eficiență energetică",
+              },
+              {
+                type: "link",
+                text: "Anunturi",
+                link: "http://www.anre.ro/ro/eficienta-energetica/informatii-de-interes-public/anunturi",
+              },
+              {
+                type: "link",
+                text: "Cerere restituire sume plătite în avans",
+                link: "http://www.anre.ro/ro/eficienta-energetica/informatii-de-interes-public/legea-544-2001-info-publice1386850453",
+              },
+              {
+                type: "link",
+                text: "Info Autorizări / Atestari / Soc. prestatoare serv EFIC",
+                link: "http://www.anre.ro/ro/eficienta-energetica/informatii-de-interes-public/info-licente-autorizari1387202078",
+              },
+              {
+                type: "link",
+                text: "LISTE PUBLICE (Atestate, auditori, manageri, Soc. prestatoare serv EFIC)",
+                link: "./Ord_110_2016_Distributie_Oltenia.pdf",
+              },
+            ],
+          },
+          {
+            title: "CONSUMATORI",
+            documents: [
+              {
+                type: "link",
+                text: "Documente informative",
+                link: "http://www.anre.ro/ro/eficienta-energetica/consumatori/documente-informative1385708608",
+              },
+            ],
+          },
+          {
+            title: "LEGISLATIE",
+            documents: [
+              {
+                type: "link",
+                text: "Tarife și contribuții bănești",
+                link: "http://www.anre.ro/ro/eficienta-energetica/legislatie/tarife-si-contributii-banesti",
+              },
+              {
+                type: "link",
+                text: "Legislație eficiență energetică",
+                link: "http://www.anre.ro/ro/eficienta-energetica/legislatie/legislatie-efic-en",
+              },
+              {
+                type: "link",
+                text: "Energy Efficiency Legislation",
+                link: "http://www.anre.ro/ro/eficienta-energetica/legislatie/energy-efficiency-legislation1438862283",
+              },
+              {
+                type: "link",
+                text: "Legislație primară",
+                link: "http://www.anre.ro/ro/eficienta-energetica/legislatie/legislatie-primara1387180368",
+              },
+              {
+                type: "link",
+                text: "Documente de discuție EE",
+                link: "http://www.anre.ro/ro/eficienta-energetica/legislatie/documente-de-discutie-ee1387285443",
+              },
+              {
+                type: "link",
+                text: "Legislație UE",
+                link: "http://www.anre.ro/ro/eficienta-energetica/legislatie/legislatie-ue",
+              },
+            ],
+          },
+        ],
+      },
+    },
   },
 };
 

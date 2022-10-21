@@ -1,0 +1,141 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.eficientaEnergetica;
+---
+
+<Layout title={content.section.title}>
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <h2>
+      {content.section.title}
+    </h2>
+
+    <div class="wrapper">
+      <p>{content.section.content}</p>
+
+      <div class="block">
+        {
+          content.section.visibleData.map((link) => {
+            return (
+              <p >
+                 {link}
+              </p>
+            );
+          })
+        }
+
+        <img src={content.section.anreImage.src} alt={content.section.anreImage.alt}>
+      </div>
+
+      <div class="data_acordion row">
+        
+        {
+          content.section.acordionData.map((accordion => {
+              return(
+                <button class="accordion">{accordion.title}</button>
+                <div class="panel">
+                  { accordion.documents.map((document) =>{
+
+                    switch ( document.type){
+                      case "title": 
+                      return (<h2>{document.text}</h2>)
+
+                      case "text": 
+                      return( <p>{document.text}</p>)
+
+                      case "link":
+                      return(      
+                   <a href={document.link} class="btn-secondary my">{document.text}</a>)
+                    }
+                    
+                  })  }
+                </div>
+              )
+          }))
+      }
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .row {
+    flex-wrap: wrap;
+  }
+.block{
+    display: flex;
+    flex-direction: column;
+margin: 2rem 0;
+
+p{
+    padding: .25rem 0;
+}
+
+img{
+    margin: 1rem auto;
+}
+}
+
+  .accordion {
+    background-color: #fcfbfc;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border: 1px solid rgba(204, 204, 204, 0.445);
+
+    &.active {
+      color: #fcfbfc;
+      background-color: #3961a7;
+
+      &:hover:not(.active) {
+        background-color: #e6e5e7;
+      }
+    }
+  }
+ 
+  .panel {
+    padding: 1rem 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    width: 100%;
+    gap: 1rem;
+    border: 1px solid rgba(204, 204, 204, 0.445);
+
+    h2{
+      margin-bottom: 1rem ;
+    }
+    p{
+      margin: 0.5rem 0;
+    }
+    a{
+      margin: 0.5rem 0;
+    }
+  }
+</style>
+
+<script is:inline>
+  let acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.style.display === "inline-flex") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "inline-flex";
+      }
+    });
+  }
+</script>
