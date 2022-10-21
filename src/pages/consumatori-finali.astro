@@ -1,44 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import solarPanel from "../assets/images/servicii_energie_electrica/solarPanel.jpg";
-
-const content = {
-  heroSection: {
-    image: solarPanel,
-    title: "Energie Electrica",
-  },
-  section: {
-    title: "Consumatori finali",
-  },
-  data: [
-    {
-      title: "CHESTIONAR ENERGETIC",
-      documents: [
-        {
-          title: "DOWNLOAD CHESTIONAR (DOC)",
-          link: "./chestionar_energetic.doc",
-        },
-        {
-          title: "DOWNLOAD CHESTIONAR (DOC)",
-          link: "./chestionar_energetic.doc",
-        },
-      ],
-    },
-    {
-      title: "CHESTIONAR ENERGETIC",
-      documents: [
-        {
-          title: "DOWNLOAD CHESTIONAR (DOC)",
-          link: "./chestionar_energetic.doc",
-        },
-        {
-          title: "DOWNLOAD CHESTIONAR (DOC)",
-          link: "./chestionar_energetic.doc",
-        },
-      ],
-    },
-  ],
-};
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.consumatoriFinali;
 ---
 
 <Layout title="Procesul de schimbare a furnizorului">
@@ -95,6 +58,7 @@ margin: 1rem 0;
         color: #fcfbfc;
         background-color: #3961a7;
 
+
         &:hover:not(.active) {
           background-color: #e6e5e7;
         }
@@ -104,7 +68,9 @@ margin: 1rem 0;
       padding: 0 18px;
       background-color: white;
       display: none;
+      flex-wrap: wrap;
       overflow: hidden;
+      gap: 1rem;
       border: 1px solid rgba(204, 204, 204, 0.445);
     }
   }
@@ -116,10 +82,10 @@ margin: 1rem 0;
     acc[i].addEventListener("click", function () {
       this.classList.toggle("active");
       let panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
+      if (panel.style.display === "flex") {
         panel.style.display = "none";
       } else {
-        panel.style.display = "block";
+        panel.style.display = "flex";
       }
     });
   }

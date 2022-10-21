@@ -1086,6 +1086,104 @@ export const TEXTS = {
         },
       },
     },
+    consumatoriFinali: {
+      heroSection: {
+        image: solarPanel,
+        title: "Energie Electrica",
+      },
+      section: {
+        title: "Consumatori finali",
+      },
+      data: [
+        {
+          title: "CHESTIONAR ENERGETIC",
+          documents: [
+            {
+              title: "DOWNLOAD CHESTIONAR (PDF)",
+              link: "./chestionar_energetic.pdf",
+            },
+            {
+              title: "DOWNLOAD CHESTIONAR (DOC)",
+              link: "./chestionar_energetic.doc",
+            },
+          ],
+        },
+        {
+          title: "GHIDUL CONSUMATORULUI ELIGIBIL",
+          documents: [
+            {
+              title: "Download ghidul consumatorului (PDF)",
+              link: "./GhidE.pdf",
+            },
+            {
+              title: "Download ghidul consumatorului (DOC)",
+              link: "./GhidE.doc",
+            },
+          ],
+        },
+        {
+          title: "OBLIGATIILE FURNIZORULUI DE ENERGIE ELECTRICA",
+          documents: [
+            {
+              title: "Download obligatii furnizor (PDF)",
+              link: "./obligatiile-furnizorului.pdf",
+            },
+            {
+              title: "Download obligatii furnizor (DOC)",
+              link: "./obligatiile-furnizorului.doc",
+            },
+          ],
+        },
+
+        {
+          title: "RAPORTARI PRIVIND ACTIVITATEA DE INFORMARE A CONSUMATORILOR",
+          documents: [
+            {
+              title: "Download raport Energie 2021",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2021_Energie.pdf",
+            },
+            {
+              title: "Download raport Energie 2020",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2020_Energie.pdf",
+            },
+            {
+              title: "Download raport Energie 2019",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2019_Energie.pdf",
+            },
+            {
+              title: "Download raport Energie 2018",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2018_Energie.pdf",
+            },
+            {
+              title: "Download raport Energie 2017",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2017_Energie.pdf",
+            },
+            {
+              title: "Download raport Energie 2016",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2016_Energie.pdf",
+            },
+            {
+              title: "Download raport Energie 2015",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2015_Energie.pdf",
+            },
+            {
+              title: "Download raport Energie 2014",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2014_Energie.pdf",
+            },
+          ],
+        },
+        {
+          title:
+            "Procedura privind acordarea despăgubirilor clienţilor casnici pentru receptoarele electrocasnice deteriorate ca efect al unor supratensiuni accidentale produse din culpa operatorului de rețea",
+          documents: [
+            {
+              title: "Ord. 177/2015",
+              link: "./Ord-177-2015.pdf",
+            },
+          ],
+        },
+      ],
+    },
   },
 };
 
