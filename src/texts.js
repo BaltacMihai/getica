@@ -629,6 +629,419 @@ export const TEXTS = {
             },
           ],
         },
+        {
+          categoryName: "INDICATORI DE PERFORMANTA 2019",
+          id: "indicatoriDePerformanta2019",
+          content: [
+            {
+              type: "title",
+              text: "Indicatori de performanta 2019",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul I",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-I-_2019.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul II",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-II-_2019.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul III",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-III-_2019.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul IV",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-IV-_2019.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / An 2019",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_2019.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 3 / An 2019",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_3_Standard_de_performanta_An_2019.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "INDICATORI DE PERFORMANTA 2018",
+          id: "indicatoriDePerformanta2018",
+          content: [
+            {
+              type: "title",
+              text: "Indicatori de performanta 2018",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul I",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-I-_2018.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul II",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-II-_2018.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul III",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-III-_2018.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul IV",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-IV-_2018.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / An 2018",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_2018.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 3 / An 2018",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_3_Standard_de_performanta_An_2018.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "INDICATORI DE PERFORMANTA 2017",
+          id: "indicatoriDePerformanta2017",
+          content: [
+            {
+              type: "title",
+              text: "Indicatori de performanta 2017",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul I",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-I-_2017.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul II",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-II-_2017.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul III",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-III-_2017.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Trimestrul IV",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_-IV-_2017.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / An 2017",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SP-FEE_-_Standard_de_Performanta_Ord_7_2017.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 3 / An 2017",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_3_Standard_de_performanta_An_2017.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "INDICATORI DE PERFORMANTA 2016",
+          id: "indicatoriDePerformanta2016",
+          content: [
+            {
+              type: "title",
+              text: "Indicatori de performanta 2016",
+            },
+            {
+              type: "text",
+              text: "ANEXA 1 / Semestrul I",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa1-sem1-2016.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Semestrul I",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa2-sem2-2016.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 3 / Semestrul I",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa3-sem1-2016.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 1 / Semestrul II",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_1_-_SPFEE_Getica_SEM_II_2016.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Semestrul II",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_-_SPFEE_Getica_SEM_II_2016.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 3 / Semestrul II",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_3_Standard_de_performanta_Sem_II_2016.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 1 / An 2016",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_1_SPFEE_Getica_An_2016.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / An 2016",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_SPFEE_Getica_An_2016.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / An 2016",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_3_Standard_de_performanta_An_2016.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "INDICATORI DE PERFORMANTA 2015",
+          id: "indicatoriDePerformanta2015",
+          content: [
+            {
+              type: "title",
+              text: "Indicatori de performanta 2015",
+            },
+            {
+              type: "text",
+              text: "ANEXA 1 / Semestrul I",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_1_Getica_sem1-2015.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Semestrul I",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_Getica_sem1-2015.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 1 / Semestrul II",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_1_Getica_sem2-2015.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2 / Semestrul II",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_Getica_sem2-2015.pdf",
+            },
+
+            {
+              type: "text",
+              text: "ANEXA 3 / An 2015",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_3-Getica-2015.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "INDICATORI DE PERFORMANTA 2014",
+          id: "indicatoriDePerformanta2014",
+          content: [
+            {
+              type: "title",
+              text: "Indicatori de performanta 2014",
+            },
+            {
+              type: "text",
+              text: "ANEXA 1",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./energie-anexa-1-2014.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./energie-anexa-2-2014.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 3",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./energie-anexa-3-2014.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "INDICATORI DE PERFORMANTA 2013",
+          id: "indicatoriDePerformanta2013",
+          content: [
+            {
+              type: "title",
+              text: "Indicatori de performanta 2013",
+            },
+            {
+              type: "text",
+              text: "ANEXA 1",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Indicatori-de-performanta-2013-anexa1.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Indicatori-de-performanta-2013-anexa2.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 3",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa-3-la-standardul-de-performanta.pdf",
+            },
+          ],
+        },
       ],
     },
     chestionarEnergetic: {
