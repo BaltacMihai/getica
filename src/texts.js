@@ -1227,6 +1227,204 @@ export const TEXTS = {
         },
       ],
     },
+    legislatieSiUtile: {
+      heroSection: {
+        image: solarPanel,
+        title: "Energie Electrica",
+      },
+      section: {
+        title: "Legislatie si utile",
+        content:
+          "PROCESUL DE SCHIMBARE A FURNIZORULUI NU PRESUPUNE PLATA NICIUNEI TAXE",
+        visibleData: [
+          {
+            title: "Codul comercial",
+            link: "./CodComercial.pdf",
+          },
+          {
+            title: "Codul comercial - Ordinul 25",
+            link: "./ord25_04CoCom.pdf",
+          },
+          {
+            title: "Legea energiei",
+            link: "./Legea_energiei_2012_MO.pdf",
+          },
+          {
+            title: "Legea 220/2008 - Certificate verzi",
+            link: "./esre_Legea 134_12modifL200_2008.pdf",
+          },
+          {
+            title: "Ordin schimbare furnizor",
+            link: "./Ord_88_09Procedura_schimbare_furnizor.pdf",
+          },
+          {
+            title: "Modificare ordin schimbare furnizor",
+            link: "./Ord_105_14.pdf",
+          },
+          {
+            title: "Ordinul 76/2016 – facturarea energiei reactive",
+            link: "./Ord76_2016.pdf",
+          },
+          {
+            title: "Furnizor de ultimă optiune",
+            link: "./Ord35_14.pdf",
+          },
+          {
+            title: "Standard de performanță furnizori",
+            link: "./Ord06_17.pdf",
+          },
+          {
+            title:
+              "Standard de performanță pentru serviciul de distribuție a enrgiei electrice",
+            link: "./Ord49_2017.pdf",
+          },
+        ],
+        acordionData: [
+          {
+            title: "TARIFE DISTRIBUTIE",
+            documents: [
+              {
+                type: "title",
+                text: "Ordinul: 114/2016",
+              },
+              {
+                type: "text",
+                text: "Ordin privind aprobarea tarifelor specifice pentru serviciul de distribuţie a energiei electrice și a prețului pentru energia electrică reactivă, pentru societatea ”S.D.E.E. Transilvania Sud” - S.A.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 114/2016",
+                link: "./Ord_114_2016_Distributie_Transilvania_Sud.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 113/2016",
+              },
+              {
+                type: "text",
+                text: "Ordin privind aprobarea tarifelor specifice pentru serviciul de distribuţie a energiei electrice şi a preţului pentru energia electrică reactivă, pentru societatea “ S.D.E.E. Transilvania Nord ”- S.A",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 113/2016",
+                link: "./Ord_113_2016_Distributie_Transilvania_Sud.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 112/2016",
+              },
+              {
+                type: "text",
+                text: "Ordin - privind aprobarea tarifelor specifice pentru serviciul de distribuţie a energiei electrice şi a preţului pentru energia electrică reactivă, pentru Societatea Comercială „S.D.E.E. Muntenia Nord” – S.A.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 112/2016",
+                link: "./Ord_112_2016_Distributie_Transilvania_Sud.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 107/2016",
+              },
+              {
+                type: "text",
+                text: "Ordin pentru aprobarea tarifelor specifice pentru serviciul de distribuţie a energiei electrice și a prețului pentru energia electrică reactivă, pentru operatorul de distribuţie concesionar S.C. E-Distribuție Muntenia S.A.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 107/2016",
+                link: "./Ord_107_2016_E-Distributie_Muntenia.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 109/2016",
+              },
+              {
+                type: "text",
+                text: "Ordin pentru aprobarea tarifelor specifice pentru serviciul de distribuţie a energiei electrice și a prețului pentru energia electrică reactivă, pentru operatorul de distribuţie concesionar S.C. E-Distribuție Dobrogea S.A.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 109/2016",
+                link: "./Ord_109_2016_E-Distributie_Dobrogea.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 108/2016",
+              },
+              {
+                type: "text",
+                text: "Ordin - privind aprobarea tarifelor specifice pentru serviciul de distribuţie a energiei electrice şi a preţului pentru energia electrică reactivă, pentru Societatea Comercială „E-Distribuţie Banat” – S.A.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 108/2016",
+                link: "./Ord_108_2016_E-Distributie_Banat.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 111/2016",
+              },
+              {
+                type: "text",
+                text: "Ordin privind aprobarea tarifelor specifice pentru serviciul de distribuţie a energiei electrice și a prețului pentru energia electrică reactivă, pentru societatea ”Delgaz Grid” - S.A.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 111/2016",
+                link: "./Ord_111_2016_Distributie_DelGaz.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 110/2016",
+              },
+              {
+                type: "text",
+                text: "Ordin privind aprobarea tarifelor specifice pentru serviciul de distribuţie a energiei electrice şi a preţului pentru energia electrică reactivă, pentru societatea Distributie Oltenia - S.A..",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 110/2016",
+                link: "./Ord_110_2016_Distributie_Oltenia.pdf",
+              },
+            ],
+          },
+          {
+            title: "TARIFE TRANSPORT",
+            documents: [
+              {
+                type: "title",
+                text: "Ordinul: 48/2017",
+              },
+              {
+                type: "text",
+                text: "Ordin de aprobare a tarifului mediu pentru serviciul de transport, a componentelor tarifului de transport de introducere a energiei electrice în rețea (TG) și de extragere a energiei electrice din rețea (TL), a tarifului pentru serviciul de sistem şi a preţului reglementat pentru energia electrică reactivă, practicate de Compania Naţională de Transport al Energiei Electrice “Transelectrica” - S.A.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 48/2017",
+                link: "./Ord_48_2017_Transport.pdf",
+              },
+            ],
+          },
+          {
+            title: "DECIZII SI ORDINE",
+            documents: [
+              {
+                type: "link",
+                text: "Decizii",
+                link: "http://213.177.15.183/PublicLists/Decizie",
+              },
+              {
+                type: "link",
+                text: "Ordine",
+                link: "http://213.177.15.183/PublicLists/Ordin",
+              },
+            ],
+          },
+        ],
+      },
+    },
   },
 };
 
