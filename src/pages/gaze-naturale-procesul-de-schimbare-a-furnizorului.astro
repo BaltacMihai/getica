@@ -1,0 +1,181 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.gazeNaturaleProcesulDeSchimbareAFurnizorului;
+---
+
+<Layout title={content.section.title}>
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <div class="disclaimer">
+      <h2>{content.disclaimer.title}</h2>
+      <a href={content.disclaimer.link.src} class="btn-secondary"
+        >{content.disclaimer.link.title}</a
+      >
+    </div>
+    <h2>{content.section.title}</h2>
+
+    <div class="wrapper">
+      <!-- Tab links -->
+
+      <div class="tab">
+        {
+          content.data.map((tab) => {
+            return (
+              <button class="tablinks" onclick={`openTab(event, '${tab.id}')`}>
+                {tab.categoryName}
+              </button>
+            );
+          })
+        }
+      </div>
+
+      <div class="contentTabs">
+        <!-- Tab content -->
+
+        {
+          content.data.map((tab) => {
+            return (
+              <div id={tab.id} class="tabcontent">
+                {tab.content.map((content) => {
+                  switch (content.type) {
+                    case "title":
+                      return <h2>{content.text}</h2>;
+                      break;
+                    case "bold":
+                      return <b>{content.text}</b>;
+                      break;
+                    case "text":
+                      return <p>{content.text}</p>;
+                      break;
+                    case "link":
+                      return <a href={content.link}>{content.text}</a>;
+                      break;
+                    case "btn":
+                      return (
+                        <a class="btn-secondary" href={content.link}>
+                          {content.text}
+                        </a>
+                      );
+                      break;
+                    case "line":
+                      return <p class="borderBottom">{content.text}</p>;
+                      break;
+                  }
+                })}
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .btn-secondary {
+    display: inline-flex;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  /* Style the tab */
+  .disclaimer {
+    margin-bottom: 2rem;
+    width: 100%;
+    h2 {
+      margin: 1rem 0;
+    }
+  }
+  .wrapper {
+    display: flex;
+    width: 100%;
+
+    @media (max-width: #{768px}) {
+      flex-direction: column;
+    }
+
+    .tab {
+      flex: 0 0 25%;
+      display: flex;
+      border: 1px solid #e6e5e7;
+      background-color: #fcfbfc;
+      flex-direction: column;
+      text-align: left;
+
+      button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        text-align: left;
+
+        &:hover {
+          background-color: #e6e5e7;
+        }
+        &.active {
+          color: #fcfbfc;
+          background-color: #3961a7;
+        }
+      }
+    }
+
+    .contentTabs {
+      flex: 0 0 75%;
+
+      .tabcontent {
+        display: none;
+        border: 1px solid #ccc;
+        border-top: none;
+        padding: 1.5rem 1rem;
+
+        b {
+          margin-bottom: 1.5rem;
+        }
+        p {
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .tabcontent {
+        animation: fadeEffect 1s; /* Fading effect takes 1 second */
+      }
+    }
+  }
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<script is:inline>
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  function openTab(evt, tabName) {
+    // Get all elements with class="tabcontent" and hide them
+    let tabcontent = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    let tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>

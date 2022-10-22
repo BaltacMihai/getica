@@ -22,8 +22,8 @@ import { BASE_URL } from "../URL";
     }
   }
 
-  function activeTheDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+  function activeTheDropdown(idHandler) {
+    document.getElementById(idHandler).classList.toggle("show");
   }
 
   // Close the dropdown menu if the user clicks outside of it
@@ -59,10 +59,13 @@ import { BASE_URL } from "../URL";
     <a href={BASE_URL}>Acasa</a>
 
     <div class="dropdown">
-      <div onclick="activeTheDropdown()" class="dropbtn a">
+      <div
+        onclick="activeTheDropdown('electricEnergyDropdown')"
+        class="dropbtn a"
+      >
         Energie electrica
       </div>
-      <div id="myDropdown" class="dropdown-content">
+      <div id="electricEnergyDropdown" class="dropdown-content">
         <a href={BASE_URL + "servicii_energie_electrica"}
           >Servicii energie electrica</a
         >
@@ -84,8 +87,18 @@ import { BASE_URL } from "../URL";
         >
       </div>
     </div>
+    <div class="dropdown">
+      <div onclick="activeTheDropdown('naturalGasDropdown')" class="dropbtn a">
+        Gaze naturale
+      </div>
+      <div id="naturalGasDropdown" class="dropdown-content">
+        <a
+          href={BASE_URL + "gaze-naturale-procesul-de-schimbare-a-furnizorului"}
+          >Schimbarea furnizorului</a
+        >
+      </div>
+    </div>
 
-    <a href="">Gaze naturale</a>
     <a href="">Info</a>
     <a href={BASE_URL + "articole"}>Articole</a>
     <a href="">Autentificare Clienti - Energetica</a>

@@ -7,6 +7,7 @@ import analiza from "./assets/images/homepage/analiza.png";
 import logo from "./assets/images/logo.png";
 import solarPanel from "./assets/images/servicii_energie_electrica/solarPanel.jpg";
 import anreImage from "./assets/images/anre.png";
+import naturalGas from "./assets/images/servicii_gaze_naturale/naturalGas.jpg";
 
 export const TEXTS = {
   cookies: {
@@ -1930,6 +1931,568 @@ export const TEXTS = {
             {
               title: "Bilant 2012 (PDF)",
               link: "./Bilant_31122012.pdf",
+            },
+          ],
+        },
+      ],
+    },
+    gazeNaturaleProcesulDeSchimbareAFurnizorului: {
+      heroSection: {
+        image: naturalGas,
+        title: "Gaze naturale",
+      },
+      section: {
+        title: "Procesul de schimbare a furnizorului",
+      },
+      disclaimer: {
+        title:
+          "Liberalizarea pietei de gaze naturale - recomandari pentru clientul casnic",
+        link: {
+          src: "Instrucțiuni_ANRE.pdf",
+          title: "Descarca Instructiuni ANRE",
+        },
+      },
+      data: [
+        {
+          categoryName: "MODALITATE DE LUCRU",
+          id: "modalitateDeLucru",
+          content: [
+            {
+              type: "title",
+              text: "Vă prezentăm paşii ce trebuie urmaţi pentru a schimba furnizorul de energie electrică de către consumatorii eligibil:",
+            },
+            {
+              type: "bold",
+              text: "Pas 1",
+            },
+            {
+              type: "text",
+              text: "Intocmire cerere de oferta de catre consumator si transmiterea acesteia catre:",
+            },
+            {
+              type: "text",
+              text: "Fax: 0213211118 | E-mail: office@getica95.ro",
+            },
+            {
+              type: "line",
+              text: "",
+            },
+            {
+              type: "bold",
+              text: "Pas 2",
+            },
+            {
+              type: "text",
+              text: "Completare Chestionar energetic (Specialistii nostrii va vor ajuta sa-l completati daca intampinati greutati cu aceasta)",
+            },
+            {
+              type: "line",
+              text: "",
+            },
+            {
+              type: "bold",
+              text: "Pas 3",
+            },
+            {
+              type: "text",
+              text: "Negociere, agreere Contract de furnizare gaze naturale",
+            },
+            {
+              type: "line",
+              text: "",
+            },
+            {
+              type: "bold",
+              text: "Pas 4",
+            },
+            {
+              type: "text",
+              text: "Transmiterea către noi a tuturor Avizelor Tehnice de Racordare (ATR) pentru fiecare punct de consum în parte şi a prognozelor de consum lunare pentru fiecare punct de consum. ( Daca consumatorii nu sunt in posesia ATR-urilor le putem pune la dispozitie un model de cerere si o adresa email la care sa o trimita dupa ce o completeaza).",
+            },
+            {
+              type: "line",
+              text: "",
+            },
+            {
+              type: "bold",
+              text: "Pas 5",
+            },
+            {
+              type: "text",
+              text: "Semnare Contract de furnizare",
+            },
+            {
+              type: "line",
+              text: "",
+            },
+            {
+              type: "bold",
+              text: "Pas 6",
+            },
+            {
+              type: "text",
+              text: "Notificarea fostului furnizor cu cel puţin 21 de zile înainte de intrarea în vigoare a noului contract de furnizare.",
+            },
+            {
+              type: "text",
+              text: "- INDICAT AR FI 30 DE ZILE INAINTE PENTRU A AVEA TIMPUL NECESAR EFECTUARII EVENTUALELOR PLATI DEJA SCADENTE CATRE FOSTUL FURNIZOR.",
+            },
+            {
+              type: "line",
+              text: "",
+            },
+            {
+              type: "bold",
+              text: "Pas 7",
+            },
+            {
+              type: "text",
+              text: "Înregistrarea de către GETICA 95 COM a contractului la autorităţile competente, moment în care începe derularea efectivă a noului contract.",
+            },
+          ],
+        },
+        {
+          categoryName: "OFERTA TIP DE FURNIZARE GAZE NATURALE",
+          id: "ofertaTipDeFurnizare",
+          content: [
+            {
+              type: "title",
+              text: "Oferta tip de furnizare gaze naturale",
+            },
+
+            {
+              type: "btn",
+              text: "Vezi oferta noncasnic",
+              link: "",
+            },
+            {
+              type: "btn",
+              text: "Vezi oferta casnic",
+              link: "",
+            },
+          ],
+        },
+        {
+          categoryName:
+            "DOCUMENTE NECESARE CONTRACTARE FURNIZARE GAZE NATURALE",
+          id: "documenteNecesare",
+          content: [
+            {
+              type: "title",
+              text: "Notificare schimbare furnizor gaze naturale",
+            },
+            {
+              type: "btn",
+              text: "Descarca Notificare",
+              link: "./Notificare_schimbare_furnizor_gaze_naturale.pdf",
+            },
+            {
+              type: "title",
+              text: "Contract persoane fizice/juridice furnizare gaze naturale",
+            },
+            {
+              type: "btn",
+              text: "Descarca Contract furnizare gaze naturale persoane fizice",
+              link: "./Draft_contract_GN_casnic_p_04.2022.pdf",
+            },
+
+            {
+              type: "btn",
+              text: "Descarca Contract furnizare gaze naturale persoane juridice ",
+              link: "./Draft_contract_GN_noncasnic_p_04.2022.pdf",
+            },
+            {
+              type: "title",
+              text: "Cerere pentru încheierea contractului de furnizare gaze naturale client casnic existent",
+            },
+            {
+              type: "btn",
+              text: "Descarca Cerere",
+              link: "./CERERE_gaze_naturale_Consumatori_casnici_CB_client_existent.pdf",
+            },
+            {
+              type: "title",
+              text: "Cerere pentru încheierea contractului de furnizare gaze naturale client casnic nou",
+            },
+            {
+              type: "btn",
+              text: "Descarca Cerere",
+              link: "./CERERE_gaze_naturale_Consumatori_casnici_CB_client_nou.pdf",
+            },
+            {
+              type: "title",
+              text: "Cerere pentru încheierea contractului de furnizare gaze naturale client noncasnic existent",
+            },
+            {
+              type: "btn",
+              text: "Descarca Cerere",
+              link: "./CERERE_gaze_naturale_Consumatori_noncasnici_CB_client_existent.pdf",
+            },
+            {
+              type: "title",
+              text: "Cerere pentru încheierea contractului de furnizare gaze naturale client noncasnic nou",
+            },
+            {
+              type: "btn",
+              text: "Descarca Cerere",
+              link: "./CERERE_gaze_naturale_Consumatori_noncasnici_CB_client_nou.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "INDICATORI DE PERFORMANTA 2022",
+          id: "indicatoriDePerformanta2022",
+          content: [
+            {
+              type: "title",
+              text: "Indicatori de performanta 2022",
+            },
+            {
+              type: "text",
+              text: "ANEXA 1",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_1_Standard_Performanta_3_2022.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 2/ Trimestrul 3",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_2_Standard_Performanta_3_2022_Q3_22_GN.pdf",
+            },
+            {
+              type: "text",
+              text: "ANEXA 3/ Trimestrul 3",
+            },
+            {
+              type: "link",
+              text: "Download (PDF)",
+              link: "./Anexa_3_Standard_Performanta_3_2022_Q3_22_GN.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "CHESTIONAR",
+          id: "chestionar",
+          content: [
+            {
+              type: "title",
+              text: "Chestionarul pentru gaze naturale poate fi accesat de aici",
+            },
+            {
+              type: "btn",
+              text: "Acceseaza chestionarul gaze naturale",
+              link: "",
+            },
+          ],
+        },
+
+        {
+          categoryName: "GHID",
+          id: "ghid",
+          content: [
+            {
+              type: "title",
+              text: "Procesul de schimbare a furnizoruluii",
+            },
+            {
+              type: "btn",
+              text: "Link pagina ANRE - schimbarea furnizorului",
+              link: "https://www.anre.ro/ro/info-consumatori/faq/gaze-naturale1386850583/schimbarea-gratuita-a-furnizorului",
+            },
+            {
+              type: "title",
+              text: "Informatii utile",
+            },
+            {
+              type: "text",
+              text: "1. Care sunt furnizorii activi în zona mea?",
+            },
+            {
+              type: "text",
+              text: "Lista furnizorilor de gaze naturale poate fi consultată pe pagina de internet www.anre.ro, secțiunea Info consumatori, rubricile Operatori economici/Gaze naturale/Titulari licenţe şi autorizaţii.",
+            },
+            {
+              type: "text",
+              text: "https://portal.anre.ro/PublicLists/LicenteAutorizatiiGNf",
+            },
+            {
+              type: "text",
+              text: "2. Cum pot denunța contractul și să schimb furnizorul de gaze naturale?",
+            },
+            {
+              type: "text",
+              text: "Odată cu deschiderea totală către concurenţă a pieţei de gaze naturale a fost implementat cadrul legal care să permită tuturor consumatorilor de gaze naturale, indiferent de natura consumului, casnic sau noncasnic, să uzeze de dreptul de eligibilitate.",
+            },
+            {
+              type: "text",
+              text: "Astfel, orice client final de gaze naturale poate să treacă de la furnizarea în regim reglementat (la preţul final reglementat şi în baza contractului-cadru de furnizare aprobate de ANRE), la furnizarea în regim concurenţial (la preţul de furnizare şi în condiţiile comerciale stabilite între furnizor şi clientul final de gaze naturale).",
+            },
+            {
+              type: "text",
+              text: "Toţi clienţii finali de gaze naturale au dreptul să îşi schimbe furnizorul, cu respectarea condiţiilor contractuale, în termen de 21 de zile de la data solicitarii.",
+            },
+            {
+              type: "text",
+              text: "Procesul de schimbare a furnizorului este gratuit, fiind interzisă perceperea oricăror taxe sau tarife legate de parcurgerea acestuia.",
+            },
+            {
+              type: "text",
+              text: "Schimbarea furnizorului de gaze naturale nu implică modificări de ordin tehnic!",
+            },
+            {
+              type: "text",
+              text: "Paşii de urmat :",
+            },
+            {
+              type: "text",
+              text: "În scopul încheierii unui nou contract de furnizare a gazelor naturale, luaţi legatura cu unul dintre furnizorii de gaze naturale din lista publicată pe site-ul ANRE https://portal.anre.ro/PublicLists/LicenteAutorizatiiGN şi negociaţi condiţiile comerciale şi preţul de furnizare sau acceptaţi o oferta-tip publicată de către furnizorul ales;",
+            },
+            {
+              type: "text",
+              text: "După ce conveniţi cu furnizorul nou asupra clauzelor contractuale, inclusiv asupra preţului de furnizare, încheiaţi cu acesta contractul de furnizare a gazelor naturale, cu luarea în considerare a termenului necesar denunţării unilaterale, în vederea rezilierii contractului încheiat cu furnizorul actual;",
+            },
+            {
+              type: "text",
+              text: "Notificaţi, în scris, actualului furnizor intenţia dvs. de reziliere a contractului de furnizare încheiat cu acesta, respectând termenul şi condiţiile de denunţare unilaterală prevăzute în contract.",
+            },
+            {
+              type: "text",
+              text: "În situatia în care sunteţi un client casnic care denunţă unilateral un contract de furnizare în regim reglementat, vă precizam că, potrivit clauzelor contractuale, această denunţare devine efectivă sub condiţia achitarii tuturor obligaţiilor de plată, mai puţin a celor care fac obiectul unor litigii aflate pe rolul instanţelor de judecată.",
+            },
+            {
+              type: "text",
+              text: "Vă recomandăm să obţineţi de la actualul furnizor o confirmare, de asemenea, în scris, a primirii notificării dumneavoastră.",
+            },
+            {
+              type: "text",
+              text: "Responsabilitatea stabilirii index-ului contorului corespunzator datei schimbării furnizorului revine operatorului sistemului la care este racordat locul dumneavoastra de consum. Acesta convine şi consemnează, împreuna cu furnizorul actual, respectiv cu noul furnizor, indexul contorului dumneavoastră din ziua în care furnizorul nou începe să vă vânda gaze naturale.",
+            },
+            {
+              type: "text",
+              text: "Vă recomandam să citiţi şi să notaţi şi dvs. index-ul contorului de gaze naturale în ziua respectivă.",
+            },
+            {
+              type: "text",
+              text: "În termen de maximum 42 de zile de la data schimbarii furnizorului, vechiul furnizor vă va transmite o factură cu decontul final de lichidare a tuturor obligaţiilor de plată.Achitaţi contravaloarea acestei facturi până la termenul scadent.",
+            },
+            {
+              type: "text",
+              text: "3. Care sunt condițiile generale minime pentru denunțarea contractului în cazul schimbării furnizorului?",
+            },
+            {
+              type: "text",
+              text: "Trebuie să verificați condițiile contractuale sau vă puteți adresa furnizorului dvs. pentru clarificare.",
+            },
+            {
+              type: "text",
+              text: "4. Am găsit o ofertă mai bună pentru furnizarea gazelor naturale și am decis să schimb furnizorul. Cine întreprinde demersurile necesare schimbării?",
+            },
+            {
+              type: "text",
+              text: "La solicitarea clientului final şi pe baza contractului de furnizare gaze naturale încheiat cu clientul final, noul furnizor are obligaţia de a întreprinde demersurile necesare încheierii contractului.",
+            },
+            {
+              type: "text",
+              text: "5. La schimbarea furnizorului, există vreun risc de deconectare?",
+            },
+            {
+              type: "text",
+              text: "Nu, pe durata derulării procesului de schimbare a furnizorului este asigurată continuitatea în alimentarea cu gaze naturale a locului de consum.",
+            },
+            {
+              type: "text",
+              text: "6. Care sunt motivele care ar putea să mă împiedice să schimb furnizorul?",
+            },
+            {
+              type: "text",
+              text: "Odată cu deschiderea către concurenţă a pieţelor de energie, a fost implementat cadrul legal care să permită tuturor consumatorilor de gaze naturale, indiferent de natura consumului (casnic sau noncasnic), să uzeze de dreptul de eligibilitate, adică să îşi aleagă furnizorul dorit şi să încheie cu acesta contracte pentru furnizarea gazelor naturale pentru locul sau locurile sale de consum.",
+            },
+            {
+              type: "text",
+              text: "Procesul de schimbare a furnizorului este gratuit, fiind interzisă perceperea oricăror taxe sau tarife legate de parcurgerea acestuia. De asemenea, schimbarea furnizorului nu implică modificări de ordin tehnic.",
+            },
+            {
+              type: "text",
+              text: "7. Pot schimba furnizorul fără sa platesc penalități ?",
+            },
+            {
+              type: "text",
+              text: "Toţi clienţii finali de gaze naturale au dreptul să îşi schimbe furnizorul, cu respectarea condiţiilor contractuale, în termen de 21 de zile de la data solicitarii.",
+            },
+            {
+              type: "text",
+              text: "Procesul de schimbare a furnizorului este gratuit, fiind interzisă perceperea oricăror taxe sau tarife legate de parcurgerea acestuia.",
+            },
+            {
+              type: "text",
+              text: "8. Cât mă costă schimbarea furnizorului?",
+            },
+            {
+              type: "text",
+              text: "Procesul de schimbare a furnizorului este gratuit, fiind interzisă perceperea oricăror taxe sau tarife legate de parcurgerea acestuia.",
+            },
+            {
+              type: "text",
+              text: "9. Care este perioada maximă de valabilitate pentru care se poate încheia un contract de furnizare?",
+            },
+            {
+              type: "text",
+              text: "Contractul de furnizare a gazelor naturale poate fi încheiat pe perioadă determinată sau nedeterminată.",
+            },
+            {
+              type: "text",
+              text: "10. Pe cine aș putea contacta în cazul în care cred că mi s-au perceput taxe pentru schimbarea furnizorului?",
+            },
+            {
+              type: "text",
+              text: "Contactați furnizorul dvs. de gaze naturale. Dacă nu sunteți mulțumit de răspunsul primit, vă puteți adresa ANRE, accesând pagina de internet www.anre.ro.",
+            },
+          ],
+        },
+        {
+          categoryName:
+            "GHID EXPLICATIV PRIVIND ELEMENTELE COMPONENTE ALE FACTURII DE GAZE NATURALE",
+          id: "ghidExplicativ",
+          content: [
+            {
+              type: "title",
+              text: "GHID EXPLICATIV PRIVIND ELEMENTELE COMPONENTE ALE FACTURII DE GAZE NATURALE",
+            },
+
+            {
+              type: "btn",
+              text: "Descarca ghidul explicativ privind elementele componente ale facturii de gaze naturale(PDF)",
+              link: "./ghidgaze.pdf",
+            },
+          ],
+        },
+        {
+          categoryName: "INFORMATII",
+          id: "informatii",
+          content: [
+            {
+              type: "title",
+              text: "Informatii ANRE",
+            },
+
+            {
+              type: "btn",
+              text: "Link pagina ANRE - Informatii consumatori gaze naturale",
+              link: "https://www.anre.ro/ro/gaze-naturale/consumatori",
+            },
+          ],
+        },
+        {
+          categoryName: "DREPTUL LA INFORMARE AL CONSUMATORULUI",
+          id: "dreptulLaInformare",
+          content: [
+            {
+              type: "title",
+              text: "DREPTUL LA INFORMARE AL CONSUMATORULUI DE ENERGIE ELECTRICA/GAZE NATURALE",
+            },
+            {
+              type: "text",
+              text: "Stimaţi consumatori,",
+            },
+            {
+              type: "text",
+              text: "Prin lege, aveţi dreptul de a fi informat, în relaţia dumneavoastră cu GETICA 95 COM SRL. Aveţi dreptul să cereţi şi să primiţi, gratuit, înainte de semnarea contractului de furnizare, o copie a acestuia şi a condiţiilor-standard de furnizare a serviciului, după caz.",
+            },
+            {
+              type: "text",
+              text: "Înainte de semnarea contractului de furnizare, GETICA 95 COM SRL are obligaţia de a vă pune la dispoziţie, în scris, următoarele informaţii:",
+            },
+            {
+              type: "text",
+              text: "- etapele şi documentele necesare pentru încheierea unui contract de furnizare;",
+            },
+            {
+              type: "text",
+              text: "- ofertele tip pentru care puteţi opta, după caz;",
+            },
+            {
+              type: "text",
+              text: "- contractul corespunzător ofertei alese, după caz;",
+            },
+            {
+              type: "text",
+              text: "- preţurile şi tarifele practicate.",
+            },
+            {
+              type: "text",
+              text: "Verificaţi înainte de semnare dacă, în contractul primit sunt incluse cel puţin următoarele informaţii:",
+            },
+            {
+              type: "text",
+              text: "- identitatea şi adresa furnizorului;",
+            },
+            {
+              type: "text",
+              text: "- serviciul furnizat, nivelurile de calitate a serviciului oferit şi continuitatea în alimentare, precum şi termenul de începere a derulării contractului;",
+            },
+            {
+              type: "text",
+              text: "- preţul/tariful aplicabil;",
+            },
+            {
+              type: "text",
+              text: "- durata contractului, condiţiile de reînnoire/prelungire a contractului şi de întrerupere temporară a alimentării cu energie electrică/gaze naturale, dreptul de denunţare unilaterală a contractului;",
+            },
+            {
+              type: "text",
+              text: "- compensaţiile/despăgubirile şi modalitatea de rambursare aplicabilă în caz de nerespectare a nivelurilor de calitate a serviciului prevăzut prin contract, după caz;",
+            },
+            {
+              type: "text",
+              text: "- penalităţile pe care trebuie să le plătiţi dacă nu respectaţi prevederile contractuale",
+            },
+            {
+              type: "text",
+              text: "Furnizorul dumneavoastră GETICA 95 COM SRL are obligaţia de a vă oferi, la cerere, un extras tipărit al procedurii de înregistrare, investigare şi soluţionare a petiţiilor primite de la consumatori.",
+            },
+            {
+              type: "text",
+              text: "Furnizorul dumneavoastră GETICA 95 COM SRL este obligat să vă informeze în legătură cu orice modificări ale preţurilor, modului de facturare, de încasare sau ale altor condiţii din contract, în mod direct şi în timp util, într-un mod transparent şi uşor de înţeles.",
+            },
+            {
+              type: "text",
+              text: "Dacă nu sunteţi de acord cu modificările anunţate, aveţi dreptul de a renunţa la contract fără a plăti despăgubiri, respectând prevederile contractuale şi legale în vigoare.",
+            },
+            {
+              type: "text",
+              text: "Dacă dreptul dumneavoastră de a fi informat vă este încălcat, vă puteţi adresa Autorităţii Naţionale de Reglementare în Domeniul Energiei - ANRE.",
+            },
+          ],
+        },
+        {
+          categoryName: "STANDARDE DE PERFORMANTE",
+          id: "standardeDePerformante",
+          content: [
+            {
+              type: "title",
+              text: "STANDARDE DE PERFORMANTE 2022",
+            },
+
+            {
+              type: "btn",
+              text: "Furnizare",
+              link: "https://www.anre.ro/ro/gaze-naturale/legislatie/standarde-de-performanta/furnizare",
+            },
+            {
+              type: "btn",
+              text: "Distributie",
+              link: "https://www.anre.ro/ro/gaze-naturale/legislatie/standarde-de-performanta/distributie",
+            },
+            {
+              type: "btn",
+              text: "Transport",
+              link: "https://www.anre.ro/ro/gaze-naturale/legislatie/standarde-de-performanta/transport1387185163",
             },
           ],
         },
