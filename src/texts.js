@@ -2614,6 +2614,460 @@ export const TEXTS = {
         },
       ],
     },
+    legislatieSiUtileGazeNaturale: {
+      heroSection: {
+        image: naturalGas,
+        title: "Gaze naturale",
+      },
+      section: {
+        title: "Legislatie si utile",
+        content:
+          "PROCESUL DE SCHIMBARE A FURNIZORULUI NU PRESUPUNE PLATA NICIUNEI TAXE",
+        visibleData: [
+          {
+            title: "Piața gazelor naturale",
+            link: "https://www.anre.ro/ro/gaze-naturale/legislatie/piata-gazelor-naturale",
+          },
+          {
+            title: "Prețuri și tarife GN",
+            link: "https://www.anre.ro/ro/gaze-naturale/legislatie/preturi-si-tarife-gn",
+          },
+          {
+            title: "Licențe în domeniul GN",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/licente-in-domeniul-gn",
+          },
+          {
+            title: "Autorizare în domeniul GN",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/autorizare-in-domeniul-gn",
+          },
+          {
+            title: "Contracte cadru",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/contracte-cadru",
+          },
+          {
+            title: "Metodologii tarifare",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/metodologii-tarifare",
+          },
+          {
+            title: "Metodologii",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/metodologii",
+          },
+          {
+            title: "Reglementări tehnice",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/reglementari-tehnice",
+          },
+          {
+            title: "Standarde de performanță",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/standarde-de-performanta",
+          },
+          {
+            title: "Monitorizare piața GN",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/monitorizare-piata-gn",
+          },
+          {
+            title: "Legislație primară",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/legislatie-primara",
+          },
+          {
+            title: "Documente de discuție",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/documente-de-discutie",
+          },
+          {
+            title: "Plan dezvoltare SNT",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/plan-dezvoltare-snt",
+          },
+          {
+            title: "Legislație UE",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/legislatie-ue",
+          },
+          {
+            title: "Alte reglementări",
+            link: "http://www.anre.ro/ro/gaze-naturale/legislatie/alte-reglementari",
+          },
+        ],
+        acordionData: [
+          {
+            title: "DECIZII SI ORDINE",
+            documents: [
+              {
+                type: "title",
+                text: "Ordinul: 16 / 2013",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 16 din 2013 privind aprobarea Codului rețelei pentru sistemul de transport al gazelor naturale cu modificările și completările ulterioare",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 16 / 2013",
+                link: "./Ord_16_2013.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 16 / 2015",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 16 din 2015 pentru aprobarea procedurii-cadru privind obligația furnizorilor de energie electrică şi gaze naturale de soluţionare a plângerilor clienţilor finali",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 16 / 2015",
+                link: "./Ord_16_2015.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 24 / 2020",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 24 din 2020 privind aprobarea tarifelor de înmagazinare subterană aferente activității de înmagazinare subterană a gazelor naturale desfășurată de către Societatea Națională de Gaze Naturale Romgaz S.A. – Filiala DEPOGAZ PLOIEȘTI S.R.L.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 24 / 2020",
+                link: "./Ord_24_2020.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 25 / 2020",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 25 din 2020 privind aprobarea tarifelor de înmagazinare subterană aferente activității de înmagazinare subterană a gazelor naturale desfășurată de către Societatea „Depomureș” Tîrgu-Mureș",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 25 / 2020",
+                link: "./Ord_25_2020.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 27 / 2020",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 27 din 2020 pentru stabilirea unor măsuri privind furnizarea gazelor naturale la clienţii casnici în perspectiva eliminării preţurilor reglementate",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 27 / 2020",
+                link: "./Ord_27_2020.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 29 / 2016",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 29 din 2016 pentru aprobarea regulamentului privind furnizarea gazelor naturale la clienții finali",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 29 / 2016",
+                link: "./Ord_29_2016.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 56 / 2008",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 56 din 2008 privind aprobarea Metodologiei pentru trecerea de la facturarea cantităților de gaze naturale în unități volumetrice la facturarea în unități de energie",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 56 / 2008",
+                link: "./Ord_56_2008.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 61 / 2013",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 61 din 2013 pentru aprobarea Regulamentului privind organizarea şi funcţionarea comisiei pentru soluţionarea disputelor pe piaţa angro şi cu amănuntul apărute între participanţii la piaţa de energie electrică şi gaze naturale",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 61 / 2013",
+                link: "./Ord_61_2013.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 62 / 2008",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 62 din 2008 privind aprobarea Regulamentului de măsurare a cantităților de gaze naturale tranzacționate în România",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 62 / 2008",
+                link: "./Ord_62_2008.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 72 / 2019",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 72 din 2019 pentru modificarea unor ordine ale președintelui Autorității Naționale de Reglementare în Domeniul Energiei",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 72 / 2019",
+                link: "./Ord_72_2019.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 77 / 2009",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 77 din 2009 privind aprobarea contractelor-cadru pentru furnizarea reglementată a gazelor naturale",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 77 / 2009",
+                link: "./Ord_77_2009.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 83 / 2020",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 83 din 2020 privind aprobarea venitului reglementat, a venitului reglementat corectat şi a tarifelor de transport pentru activitatea de transport al gazelor naturale prin Sistemul Naţional de Transport.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 83 / 2020",
+                link: "./Ord.ANRE_nr.83_27.05_2020.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 90 / 2019",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 90 din 2019 de aprobare a tarifelor reglementate pentru prestarea serviciului de distribuție a gazelor naturale realizat de Societatea DELGAZ GRID S.A.",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 90 / 2019",
+                link: "./Ord__56_2008.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 96 / 2015",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 96 din 2015 pentru aprobarea Regulamentului privind activitatea de informare a clienților finali de energie electrică și gaze naturale",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 96 / 2015",
+                link: "./Ord_96_2015.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 97 / 2015",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 97 din 2015 privind modificarea și completarea Ord. 107 din 2014 pentru stabilirea unor măsuri privind furnizarea gazelor naturale la clienții noncasnici în perspectiva eliminării prețurilor finale reglementate",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 97 / 2015",
+                link: "./Ord__56_2008.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 97 / 2018",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 97 din 2018 de aprobare a Regulamentului privind accesul la sistemele de distribuție a gazelor naturale și de modificare a unor ordine ale preşedintelui Autorităţii Naţionale de Reglementare în Domeniul Energiei",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 97 / 2018",
+                link: "./Ord_97_2018.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 106 / 2014",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 106 din 2014 privind modalitățile de informare a clienților finali de către furnizorii de gaze naturale cu privire la condițile comerciale de furnizare a gazelor naturale",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 106 / 2014",
+                link: "./Ord_106_2014.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 56 / 2008",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 128 din 2020 pentru aprobarea procedurii privind soluționarea neînțelegerilor apărute la încheierea contractelor în sectorul energiei",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 56 / 2008",
+                link: "./Ord_56_2008.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 174 / 2018",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 174 din 2018 de aprobare a Regulamentului privind furnizarea de ultimă instanţă a gazelor naturale",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 174 / 2018",
+                link: "./Ord._174_2018.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 179 / 2015",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 179 din 2015 pentru aprobarea Procedurii privind verificările și reviziile tehnice ale instalațiilor de utilizare a gazelor naturale",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 179 / 2015",
+                link: "./Ord_179_2015.pdf",
+              },
+              {
+                type: "title",
+                text: "Ordinul: 234 / 2019",
+              },
+              {
+                type: "text",
+                text: "Ordin ANRE 234 din 2019 pentru aprobarea Procedurii de schimbare a furnizorului de energie electrică/gaze naturale de către clientul final",
+              },
+              {
+                type: "link",
+                text: "Descarca Ordinul: 234 / 2019",
+                link: "./Ord_234_2019.pdf",
+              },
+              {
+                type: "title",
+                text: "OUG: 1 / 2020",
+              },
+              {
+                type: "text",
+                text: "OUG 1 din 2020 privind unele măsuri fiscal-bugetare și pentru modificarea și completarea unor acte normative",
+              },
+              {
+                type: "link",
+                text: "Descarca OUG: 1 / 2020",
+                link: "./OUG_1_2020.pdf",
+              },
+              {
+                type: "title",
+                text: "OUG: 53 / 2011",
+              },
+              {
+                type: "text",
+                text: "OUG 53 din 2011 pentru instituirea unor măsuri în domeniul gazelor naturale",
+              },
+              {
+                type: "link",
+                text: "Descarca OUG: 53 / 2011",
+                link: "./OUG_53_2011.pdf",
+              },
+              {
+                type: "title",
+                text: "HG: 461 / 2016",
+              },
+              {
+                type: "text",
+                text: "HG 461 din 2016 privind calendarul de liberalizare a prețului de achiziție a gazelor naturale din producția internă pentru clienții casnici și producători de energie termică",
+              },
+              {
+                type: "link",
+                text: "Descarca HG: 461 / 2016",
+                link: "./HG_461.pdf",
+              },
+              {
+                type: "title",
+                text: "HG: 488 / 2015",
+              },
+              {
+                type: "text",
+                text: "HG 488 din 2015 privind stabilirea prețului de achiziție a gazelor naturale din producția internă",
+              },
+              {
+                type: "link",
+                text: "Descarca HG: 488 / 2015",
+                link: "./HG_488_2015.pdf",
+              },
+              {
+                type: "title",
+                text: "Decizia: 1368 / 2006",
+              },
+              {
+                type: "text",
+                text: "Decizia ANRE 1368 din 2006 privind deschiderea integrală a pieței interne a gazelor naturale pentru consumatorii noncasnici",
+              },
+              {
+                type: "link",
+                text: "Descarca Decizia: 1368 / 2006",
+                link: "./Decizia_1368_2006.pdf",
+              },
+              {
+                type: "title",
+                text: "Legea: 123 / 2012",
+              },
+              {
+                type: "text",
+                text: "Legea 123 din 2012 a energiei electrice şi a gazelor naturale",
+              },
+              {
+                type: "link",
+                text: "Descarca Legea: 123 / 2012",
+                link: "./Legea_123_2012_EE_GN.pdf",
+              },
+              {
+                type: "title",
+                text: "Legea: 174 / 2014",
+              },
+              {
+                type: "text",
+                text: "Legea 174 din 2014 privind aprobarea OUG 35/2014 pentru completarea Legii 123/2012",
+              },
+              {
+                type: "link",
+                text: "Descarca Legea: 174 / 2014",
+                link: "./Legea_174_2012.pdf",
+              },
+              {
+                type: "title",
+                text: "LEGISLATIE IN VIGOARE GAZE NATURALE - link website A.N.R.E.",
+              },
+
+              {
+                type: "link",
+                text: "Acceseaza link",
+                link: "https://www.anre.ro/ro/gaze-naturale/legislatie",
+              },
+            ],
+          },
+        ],
+      },
+    },
   },
 };
 
