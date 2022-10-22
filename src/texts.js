@@ -2540,6 +2540,80 @@ export const TEXTS = {
         },
       },
     },
+    consumatoriFinaliGazeNaturale: {
+      heroSection: {
+        image: naturalGas,
+        title: "Gaze naturale",
+      },
+      section: {
+        title: "Consumatori finali",
+      },
+      data: [
+        {
+          title: "RAPORTARI PRIVIND ACTIVITATEA DE INFORMARE A CONSUMATORILOR",
+          documents: [
+            {
+              title: "Download raport Gaze naturale 2021",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2021_GAZE.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2020",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2020_GAZE.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2019",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2019_GAZE.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2018",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2018_GAZE.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2017",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2017_GAZE.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2016",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2016_GAZE.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2015",
+              link: "./Raport_privind_activitatea_de_informare_a_consumatorilor_Getica_95_AN_2015_GAZE.pdf",
+            },
+          ],
+        },
+        {
+          title:
+            "RAPORTUL ANUAL AL NIVELULUI DE REALIZARE A INDICATORILOR DE PERFORMANTA",
+          documents: [
+            {
+              title: "Download raport Gaze naturale 2021",
+              link: "./Anexa_3_Standard_performante_Gaze_naturale_ord_37_2007_2021.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2020",
+              link: "./Anexa_3_Standard_performante_Gaze_naturale_ord_37_2007_2020.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2019",
+              link: "./Anexa_3_Standard_performante_Gaze_naturale_ord_37_2007_2019.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2018",
+              link: "./Anexa_3_Standard_performante_Gaze_naturale_ord_37_2007_2018.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2017",
+              link: "./Anexa_3_Standard_performante_Gaze_naturale_ord_37_2007_2017.pdf",
+            },
+            {
+              title: "Download raport Gaze naturale 2016",
+              link: "./Anexa_3_Standard_performante_Gaze_naturale_ord_37_2007_2016.pdf",
+            },
+          ],
+        },
+      ],
+    },
   },
 };
 

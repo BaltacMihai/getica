@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.consumatoriFinaliGazeNaturale;
+---
+
+<Layout title={content.heroSection.title}>
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <h2>
+      {content.section.title}
+    </h2>
+
+    <div class="wrapper">
+
+        {
+            content.data.map((accordion => {
+                return(
+                  <button class="accordion">{accordion.title}</button>
+                  <div class="panel">
+                    { accordion.documents.map((document) =>{
+                       return(      
+                     <a href={document.link} class="btn-secondary my">{document.title}</a>)
+                    })  }
+                  </div>
+                )
+            }))
+        }
+      
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+
+  .my{
+margin: 1rem 0;
+  }
+  .wrapper {
+    width: 100%;
+
+    .accordion {
+      background-color: #fcfbfc;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      border: 1px solid rgba(204, 204, 204, 0.445);
+
+      &.active {
+        color: #fcfbfc;
+        background-color: #3961a7;
+
+
+        &:hover:not(.active) {
+          background-color: #e6e5e7;
+        }
+      }
+    }
+    .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: white;
+}
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      flex-wrap: wrap;
+      overflow: hidden;
+      gap: 1rem;
+      border: 1px solid rgba(204, 204, 204, 0.445);
+    }
+  }
+</style>
+
+<script is:inline>
+  let acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.style.display === "flex") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "flex";
+      }
+    });
+  }
+</script>
