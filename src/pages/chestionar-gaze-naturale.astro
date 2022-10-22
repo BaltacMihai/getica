@@ -1,0 +1,177 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.chestionarGazeNaturale;
+
+
+
+---
+
+<Layout title="Chestionar energetic">
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <h2>{content.section.title}</h2>
+    <div class="wrapper">
+      <div class="tutorial">
+        <h2>{content.section.tutorial.header}</h2>
+        <a
+          href={content.section.tutorial.downloadPDF.link}
+          class="btn-secondary">{content.section.tutorial.downloadPDF.title}</a
+        >
+        <a
+          href={content.section.tutorial.downloadDOC.link}
+          class="btn-secondary">{content.section.tutorial.downloadDOC.title}</a
+        >
+    {
+         content.section.tutorial.steps?.map((step) => ( 
+            <h3>{step.title}</h3>
+            <p>{step.content}</p>
+            )
+        )
+    }
+       
+      </div>
+      <div class="form">
+        <h2>Formular online - chestionar gaze naturale</h2>
+        <div class="form-element">
+          <label for="name">Numele companiei </label>
+          <input type="text" title="name" id="name" />
+        </div>
+        <div class="form-element">
+          <label for="email">Adresa de email </label>
+          <input type="email" title="email" id="email"/>
+        </div>
+        <div class="form-element">
+          <label for="phone">Telefon </label>
+          <input type="text" title="phone" id="phone"/>
+        </div>
+        <div class="form-element">
+          <label for="adress">Adresa locului de consum </label>
+          <input type="text" title="adress" id="adress"/>
+        </div>
+        <div class="form-element">
+          <label for="activityProfil">Profil activitate </label>
+          <input type="text" title="activityProfil" id="activityProfil"/>
+        </div>
+        <div class="btn-primary" onclick="generateEmail()">Genereaza email</div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline>
+function containsOnlyNumbers(str) {
+  return /^\d+$/.test(str);
+}
+
+function generateEmail(){
+
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let phone = document.getElementById("phone").value;
+let adress = document.getElementById("adress").value;
+let activityProfil = document.getElementById("activityProfil").value;
+let ourEmail = "test@test.com";
+
+
+let generatedEmail = `mailto:${ourEmail}?subject=%5BChestionar%20GazeNaturale%5D%20Cerere%20${name}%20&body=Buna%20ziua%2C%0D%0A%0D%0ANumele%20meu%20este%20${name}%20si%20doresc%20sa%20schimb%20furnizorul%20catre%20dumneavoastra.%0D%0AMa%20ocup%20cu%20${activityProfil}.%0D%0A%0D%0ADatele%20mele%20de%20contact%20sunt%20urmatoarele%3A%0D%0ANumarul%20de%20telefon%3A%20${phone}%0D%0AEmailul%20este%3A%20${email}%0D%0AAdresa%20este%20${adress}%0D%0A%0D%0A%0D%0A--%20Acest%20mail%20este%20generat%20automat%20--`
+
+
+if( name.length === 0 || email.length === 0 || phone.length === 0 || adress.length === 0 || activityProfil .length === 0 )
+{alert("Completeaza toate campurile!");
+return null;
+}
+
+if(name.length < 3)
+{
+  alert("Numele nu este corect");
+return null;
+
+}
+
+
+if(!email.includes("@") || !email.includes(".") )
+{
+ alert("Emailul nu este corect");
+return null;
+}
+
+if(!containsOnlyNumbers(phone))
+{
+ alert("Numarul de telefon nu este corect");
+return null;
+}
+if(adress.length < 3)
+{
+  alert("Adresa nu este corect");
+return null;
+
+}
+if(activityProfil.length < 3)
+{
+  alert("Activitatea nu este corect");
+return null;
+
+}
+ window.open(generatedEmail);
+
+
+
+}
+
+</script>
+
+<style lang="scss">
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: #{768px}) {
+ flex-direction: column;
+  }
+    .tutorial {
+      flex: 0 0 50%;
+
+      h3 {
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .btn-secondary{
+        display: inline-flex;
+      }
+    }
+    .form {
+      flex: 0 0 45%;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: #{768px}) {
+border-top: 1px solid black;
+margin-top: 1rem;
+padding-top: 1rem;
+  }
+      .form-element {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        label {
+          padding: 0.25rem 0;
+        }
+        input {
+          padding: 0.5rem;
+          width: 100%;
+        }
+      }
+
+      .btn-primary {
+        width: fit-content;
+      }
+    }
+  }
+</style>
+ 

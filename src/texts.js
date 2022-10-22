@@ -2498,6 +2498,48 @@ export const TEXTS = {
         },
       ],
     },
+    chestionarGazeNaturale: {
+      heroSection: {
+        image: naturalGas,
+        title: "Gaze naturale",
+      },
+      section: {
+        title: "Chestionar gaze naturale",
+        tutorial: {
+          header: "Cum completez formularul?",
+          downloadPDF: {
+            title: "DOWNLOAD CHESTIONAR (PDF)",
+            link: "./gaze-naturale-chestionar2013.pdf",
+          },
+          downloadDOC: {
+            title: "DOWNLOAD CHESTIONAR (DOC)",
+            link: "./gaze-naturale-chestionar2013.doc",
+          },
+          steps: [
+            {
+              title: "PASUL 1",
+              content:
+                " Descarcati formularul de mai sus in format PDF sau DOC (Microsoft Office)",
+            },
+            { title: "PASUL 2", content: "Completati formularul" },
+            {
+              title: "PASUL 3",
+              content:
+                "Completati datele de contact din formularul de pe aceasta pagina",
+            },
+            {
+              title: "PASUL 4",
+              content: "Accesati butonul 'Genereaza email'  completat",
+            },
+            {
+              title: "PASUL 5",
+              content:
+                "In mailul creat, atasati formularul de la pasul 1, completat",
+            },
+          ],
+        },
+      },
+    },
   },
 };
 
