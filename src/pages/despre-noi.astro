@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { TEXTS } from "../texts";
+const content = TEXTS.pages.despreNoi;
+---
+
+<Layout title="Servicii energie electrica">
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="content">
+    <h2>{content.section.title}</h2>
+    <div class="block">
+      {
+        content.section.data.map((service) => {
+          switch (service.type) {
+            case "bold":
+              return <b>{service.text}</b>;
+            case "text":
+              return <p>{service.text}</p>;
+            case "italic":
+              return <p class="italic">{service.text}</p>;
+          }
+        })
+      }
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .disclaimer {
+    margin: 1rem 0;
+  }
+  .info {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    @media (max-width: #{768px}) {
+      flex-direction: column;
+    }
+
+    img {
+      object-fit: contain;
+    }
+    img,
+    .contact {
+      width: 100%;
+    }
+  }
+  .block {
+    margin: 1rem;
+
+    p,
+    b {
+      margin: 0.5rem 0;
+    }
+    .italic {
+      margin-top: 1rem;
+      font-style: italic;
+    }
+  }
+</style>

@@ -106,8 +106,15 @@ import { BASE_URL } from "../URL";
         </a>
       </div>
     </div>
+    <div class="dropdown">
+      <div onclick="activeTheDropdown('infoDropdown')" class="dropbtn a">
+        Info
+      </div>
+      <div id="infoDropdown" class="dropdown-content">
+        <a href={BASE_URL + "despre-noi"}>Despre Noi</a>
+      </div>
+    </div>
 
-    <a href="">Info</a>
     <a href={BASE_URL + "articole"}>Articole</a>
     <a href="">Autentificare Clienti - Energetica</a>
   </div>

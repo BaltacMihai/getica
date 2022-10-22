@@ -8,6 +8,7 @@ import logo from "./assets/images/logo.png";
 import solarPanel from "./assets/images/servicii_energie_electrica/solarPanel.jpg";
 import anreImage from "./assets/images/anre.png";
 import naturalGas from "./assets/images/servicii_gaze_naturale/naturalGas.jpg";
+import energyImage from "./assets/images/info/energy.jpg";
 
 export const TEXTS = {
   cookies: {
@@ -3064,6 +3065,51 @@ export const TEXTS = {
                 link: "https://www.anre.ro/ro/gaze-naturale/legislatie",
               },
             ],
+          },
+        ],
+      },
+    },
+    despreNoi: {
+      heroSection: {
+        image: energyImage,
+        title: "Getica 95",
+      },
+      section: {
+        title: "GETICA 95",
+        data: [
+          {
+            type: "bold",
+            text: "DESPRE GETICA 95",
+          },
+          {
+            type: "text",
+            text: "SC GETICA 95 COM SRL opereaza pe piata de energie electrica din anul 2010 cand a obtinut licenta de furnizare, iar pe piata gazelor naturale din 2012, fiind licentiata si in acest domeniu.",
+          },
+
+          {
+            type: "text",
+            text: "Odata cu liberalizarea pietei de energie electrica si gaze, societatea si-a reorientat cea mai mare parte a prioritatilor catre comercializarea acestor produse, constituind in acest scop o echipa tanara, dinamica, cu competenta in domeniu, apta sa prezinte in mod obiectiv oferta noastra, sa urmareasca si sa duca la indeplinire contractele in derulare si sa atraga noi clienti.",
+          },
+          {
+            type: "text",
+            text: "Primii clienti au fost dintre operatorii din domeniile hotelier, producerii si comercializarii produselor alimentare si al firmelor cu obiect de activitate in procesarea cerealelor si plantelor tehnice, producerea furajelor combinate, respectiv cresterea pasarilor de carne.",
+          },
+          {
+            type: "text",
+            text: "Concomitent cu dobandirea de experienta in ofertarea si incheierea contractelor de energie electrica si gaze naturale si, de asemenea, in administrarea derularii acestora, ne-am extins aria potentialilor clienti, actionand in prezent, cu competenta, in cele mai diverse sectoare de activitate, respectiv, constructii, metalurgie, textile, chimie, mobila, mase plastice, servicii comunitare, transport si nu in ultimul rand administratie, fiind furnizorii unor importante municipii si capitale de judet.",
+          },
+          {
+            type: "text",
+            text: "Avantajul clientilor si al potentialilor clienti, in relatia comerciala cu societatea noastra, tine in primul rand de nivelul pretului oferit, in sensul ca promovom un pret competitiv, dar si de posibilitatea certa de a negocia orice clauza contractuala, fiind preocupati de a deveni un partener de incredere pentru oricine doreste sa fie clientul nostru.",
+          },
+
+          {
+            type: "text",
+            text: "Suntem dispusi sa negociem cinstit si sincer, sa pastram o relatie profesionala corecta cu clientii si sa sprijinim orice initiativa de imbunatatire a acestei relatii.",
+          },
+          {
+            type: "text",
+            text: "Getica 95 dispune de resurse ce garanteaza siguranta in alimentare la nivelul oricarui furnizor cu traditie in domeniu si se ocupa de tot ce tine de schimbarea furnizorului, fara nici un cost suplimentar pentru dumneavoastra.",
           },
         ],
       },
