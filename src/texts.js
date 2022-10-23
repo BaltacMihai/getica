@@ -9,7 +9,7 @@ import solarPanel from "./assets/images/servicii_energie_electrica/solarPanel.jp
 import anreImage from "./assets/images/anre.png";
 import naturalGas from "./assets/images/servicii_gaze_naturale/naturalGas.jpg";
 import energyImage from "./assets/images/info/energy.jpg";
-
+import deranjamente from "./assets/images/info/deranjamente-getica.png";
 export const TEXTS = {
   cookies: {
     text: ' www.getica95.ro utilizează fișiere de tip cookie. Îți aducem la cunoștință faptul că ne-am actualizat politicile pentru a ne conforma cu modificările propuse aduse de Directiva (UE) 2002/58/EC ("Directiva E-Privacy") si de Regulamentul (UE) 2016/679 privind protectia persoanelor fizice in ceea ce priveste prelucrarea datelor cu caracter personal si privind libera circulatie a acestor date si de abrogare a Directivei 95/46/CE ("Regulamentul GDPR")',
@@ -3622,6 +3622,139 @@ export const TEXTS = {
             ],
           },
         ],
+      },
+    },
+
+    deranjamente: {
+      heroSection: {
+        image: energyImage,
+        title: "Getica 95",
+      },
+      section: {
+        title: "Deranjamente",
+        disclaimer: [
+          {
+            type: "title",
+            text: "Centru informatii clienti:",
+          },
+          {
+            type: "text",
+            text: "Telefon(apel gratuit): 0800 800 185",
+          },
+          {
+            type: "text",
+            text: "E-mail: office@getica95.ro",
+          },
+          {
+            type: "text",
+            text: "Program: Luni - Vineri: 8.30 - 17.30",
+          },
+        ],
+        intreruperiPrograme: {
+          photoSrc: deranjamente,
+          info: [
+            {
+              type: "title",
+              text: "Notificarea întreruperilor programate",
+            },
+            {
+              type: "text",
+              text: "În cazul întreruperilor programate, avem posibilitatea de a notifica consumatorii asupra întreruperilor în alimentare cu energie electrică. Lista întreruperilor programate poate fi consultată la adresele de mai jos",
+            },
+            {
+              type: "link",
+              text: "E- Distribuție Muntenia (București, județele Ilfov și Giurgiu)",
+              src: "https://www.e-distributie.com/ro/intreruperi-curent/intreruperi-planificate-muntenia.html",
+            },
+            {
+              type: "link",
+              text: "E- Distribuție Banat (județele Timiș, Arad, Caraș Severin și Hunedoara)",
+              src: "https://www.e-distributie.com/ro/intreruperi-curent/intreruperi-planificate-banat.html",
+            },
+            {
+              type: "link",
+              text: "E- Distribuție Dobrogea (județele Constanța, Tulcea, Ialomița și Călărași)",
+              src: "https://www.e-distributie.com/ro/intreruperi-curent/intreruperi-planificate-dobrogea.html",
+            },
+            {
+              type: "link",
+              text: "Distributie Energie Oltenia (județele Argeș, Gorj, Olt, Vâlcea, Dolj, Mehedinți și Teleorman)",
+              src: "https://www.distributieoltenia.ro/ro/suport/lucrari-pentru-prevenire-si-corectare-avarii.html",
+            },
+            {
+              type: "link",
+              text: "Delgaz Grid ( judetele Suceava, Botosani, Neamt, Iasi, Bacau, Vaslui)",
+              src: "https://delgaz.ro/intreruperi-programate#!/",
+            },
+            {
+              type: "link",
+              text: "Distributie Energie Electrica Romania - Muntenia Nord, Transilvania Sud si Transilvania Nord (județele Prahova, Brăila, Buzău, Galați, Vrancea, Dâmbovița, Alba, Brașov, Covasna, Harghita, Mureș, Sibiu, Cluj, Maramureș, Bihor, Sălaj, Bistrița-Năsăud și Satu Mare)",
+              src: "https://www.distributie-energie.ro/suport/intreruperi-deer/",
+            },
+          ],
+        },
+        deranjamentePeZone: {
+          title: "Deranjamente pe zone:",
+          list: [
+            {
+              boldText: "Moldova:",
+              text: " 0800 800 929",
+              linkText:
+                " (județele Bacău, Botoșani, Iași, Neamț, Suceava și Vaslui)",
+              linkSrc: "https://delgaz.ro/despre-noi/numere-de-urgenta",
+            },
+            {
+              boldText: "Muntenia Sud:",
+              text: " 0800 070 888 (apel gratuit) sau 021 9291",
+              linkText: " (București, județele Ilfov și Giurgiu)",
+              linkSrc: "https://www.e-distributie.com/ro/contact.html",
+            },
+            {
+              boldText: "Muntenia Nord:",
+              text: " 0800 500 205 (apel gratuit) sau 0239 929 Brăila; 0238 929 Buzău; 0237 929 Focșani; 0236 929 Galați; 0244 929 Prahova; 0245 928 Dâmbovița",
+              linkText:
+                " (județele Prahova, Brăila, Buzău, Galați, Vrancea și Dâmbovița)",
+              linkSrc: "http://www.edmn.ro/TELEFOANE%20DERANJAMENTE.pdf",
+            },
+            {
+              boldText: "Dobrogea:",
+              text: " 0800 070 555 (apel gratuit) sau prefix judet+929",
+              linkText: " (județele Constanța, Tulcea, Ialomița și Călărași)",
+              linkSrc: "https://www.e-distributie.com/ro/contact.html",
+            },
+            {
+              boldText: "Banat:",
+              text: " 0800 070 444 (apel gratuit) sau prefix judet+929 ",
+              linkText: " (județele Timiș, Arad, Caraș Severin și Hunedoara)",
+              linkSrc: "https://www.e-distributie.com/ro/contact.html",
+            },
+            {
+              boldText: "Transilvania Nord:",
+              text: " 0800 400 929 (apel gratuit) sau prefix judet+929 ",
+              linkText:
+                " (județele Cluj, Maramureș, Bihor, Sălaj, Bistrița-Năsăud și Satu Mare)",
+              linkSrc: "https://www.edtn.ro/suport/telefonul-clientului/",
+            },
+            {
+              boldText: "Transilvania Sud:",
+              text: " 0800 500 929 (apel gratuit) sau 0268 402 050",
+              linkText:
+                " (județele Alba, Brașov, Covasna, Harghita, Mureș și Sibiu)",
+              linkSrc: "https://www.sdeets.ro/relatii-cu-clientii/",
+            },
+            {
+              boldText: "Oltenia:",
+              text: " 0800 500 000 (apel gratuit) sau 0251 408 006, 0251 408 007, 0251 408 008",
+              linkText:
+                "  (județele Argeș, Gorj, Olt, Vâlcea, Dolj, Mehedinți și Teleorman)",
+              linkSrc:
+                "https://www.distributieoltenia.ro/ro/suport/lucrari-pentru-prevenire-si-corectare-avarii.html",
+            },
+          ],
+        },
+        contactUs: {
+          title: "Contacteaza-ne",
+        },
       },
     },
   },

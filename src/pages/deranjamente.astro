@@ -1,0 +1,130 @@
+---
+import Form from "../components/Form.astro";
+import Layout from "../layouts/Layout.astro";
+import { TEXTS } from "../texts";
+
+const content = TEXTS.pages.deranjamente;
+---
+
+<Layout>
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+
+  <div class="content">
+    <h2>
+      {content.section.title}
+    </h2>
+    <div class="wrapper">
+      <div class="disclaimer">
+        {
+          content.section.disclaimer.map((elem) => {
+            switch (elem.type) {
+              case "title":
+                return <h2>{elem.text}</h2>;
+              case "text":
+                return <p>{elem.text}</p>;
+            }
+          })
+        }
+      </div>
+
+      <div class="row section">
+        <div class="col">
+          {
+            content.section.intreruperiPrograme.info.map((elem) => {
+              switch (elem.type) {
+                case "title":
+                  return <h2>{elem.text}</h2>;
+
+                case "text":
+                  return <p>{elem.text}</p>;
+
+                case "link":
+                  return (
+                    <a href={elem.src} class="my">
+                      {elem.text}
+                    </a>
+                  );
+              }
+            })
+          }
+        </div>
+        <div class="col">
+          <img
+            src={content.section.intreruperiPrograme.photoSrc}
+            alt="intreruperiPrograme"
+          />
+        </div>
+      </div>
+
+      <div class="col section">
+        <h2>{content.section.deranjamentePeZone.title}</h2>
+        {
+          content.section.deranjamentePeZone.list.map((zone) => {
+            return (
+              <p>
+                <b>{zone.boldText}</b> {zone.text}
+                <a href={zone.linkSrc}>{zone.linkText}</a>
+              </p>
+            );
+          })
+        }
+      </div>
+
+      <div class="col section">
+        <h2>{content.section.contactUs.title}</h2>
+        <Form from="Deranjamente" />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .wrapper {
+    width: 100%;
+  }
+  .disclaimer {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    padding: 2rem 5rem;
+    background-color: #fecb06;
+    border-radius: 20px;
+
+    p {
+      padding: 0.5rem 0;
+    }
+  }
+
+  .row {
+    @media (max-width: #{1025px}) {
+      flex-direction: column-reverse;
+    }
+
+    .col {
+      flex: 0 0 50%;
+      display: flex;
+      flex-direction: column;
+      a {
+        margin: 0.5rem 0;
+        text-decoration: none;
+        &::before {
+          content: " - ";
+        }
+      }
+    }
+  }
+
+  .section {
+    margin: 5rem 0;
+  }
+  P {
+    margin: 0.5rem 0;
+    text-decoration: none;
+    &::before {
+      content: " - ";
+    }
+  }
+</style>

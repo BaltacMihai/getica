@@ -1,0 +1,120 @@
+---
+export interface Props {
+  from: string;
+}
+
+const { from } = Astro.props as Props;
+---
+
+<div class="form">
+  <h3>Expertii nostri vor raspunde mesajelor dumneavoastra</h3>
+
+  <div class="form-element">
+    <label for="name">Nume</label>
+    <input type="text" name="name" id="name" />
+  </div>
+  <div class="form-element">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+  </div>
+  <div class="form-element">
+    <label for="subject">Subiect</label>
+    <input type="text" name="subject" id="subject" />
+  </div>
+  <div class="form-element">
+    <label for="mesaj">Mesaj</label>
+    <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea>
+  </div>
+
+  <div
+    class="btn-primary"
+    onclick="generateEmail()"
+    data-typeofemail={from}
+    id="btnGenerate"
+  >
+    Genereaza Email
+  </div>
+</div>
+
+<script is:inline>
+  function generateEmail() {
+    let btnGenerate =
+      document.getElementById("btnGenerate").dataset.typeofemail;
+
+    console.log("btnGenerate");
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let mesaj = document.getElementById("mesaj").value;
+
+    let ourEmail = "test@test.com";
+
+    let generatedEmail = `mailto:${ourEmail}?subject=%5B%20${btnGenerate}%20%5D%20${subject}%20&body=Emailul%20meu%20este%3A%20${email}%20.%0D%0A%0D%0A${mesaj}`;
+
+    if (
+      name.length === 0 ||
+      email.length === 0 ||
+      subject.length === 0 ||
+      mesaj.length === 0
+    ) {
+      alert("Completeaza toate campurile!");
+      return null;
+    }
+
+    if (name.length < 3) {
+      alert("Numele nu este corect");
+      return null;
+    }
+
+    if (!email.includes("@") || !email.includes(".")) {
+      alert("Emailul nu este corect");
+      return null;
+    }
+    if (subject.length < 3) {
+      alert("Numele nu este corect");
+      return null;
+    }
+
+    if (mesaj.length < 3) {
+      alert("Mesajul nu este corect");
+      return null;
+    }
+    window.open(generatedEmail);
+  }
+</script>
+
+<style lang="scss">
+  .form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #3961a7;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 20px;
+
+    h3 {
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+
+    .form-element {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      label {
+        padding: 0.25rem 0;
+      }
+      input,
+      textarea {
+        padding: 0.5rem;
+
+        width: 98%;
+      }
+
+      textarea {
+        resize: none;
+      }
+    }
+  }
+</style>
