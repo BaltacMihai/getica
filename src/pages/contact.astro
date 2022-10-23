@@ -1,0 +1,73 @@
+---
+import Form from "../components/Form.astro";
+import Layout from "../layouts/Layout.astro";
+import { TEXTS } from "../texts";
+
+const content = TEXTS.pages.contactUs;
+---
+
+<Layout>
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+
+  <div class="content">
+    <h2>
+      {content.section.title}
+    </h2>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col info">
+          {
+            content.section.info.map((elem) => {
+              return (
+                <p>
+                  <b>{elem.boldTest}</b>
+                  {elem.text}
+                </p>
+              );
+            })
+          }
+        </div>
+        <div class="col">
+          <Form from="Contact" />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .wrapper {
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: #{1025px}) {
+      flex-direction: column;
+    }
+    .info {
+      background-color: #3961a7;
+      padding: 2rem;
+      color: white;
+      border-radius: 20px;
+      margin: 2rem 0;
+    }
+    .col {
+      flex: 0 0 45%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .section {
+    margin: 5rem 0;
+  }
+  P {
+    margin: 0.5rem 0;
+    text-decoration: none;
+  }
+</style>

@@ -3757,6 +3757,48 @@ export const TEXTS = {
         },
       },
     },
+    contactUs: {
+      heroSection: {
+        image: energyImage,
+        title: "Getica 95",
+      },
+      section: {
+        title: "Contact",
+        info: [
+          {
+            boldTest: "",
+            text: "GETICA 95",
+          },
+          {
+            boldTest: "Adresa:",
+            text: "Strada Dorobanti nr 20, Judetul: Buzau Oras: Ramnicul Sarat",
+          },
+          {
+            boldTest: "Tel:",
+            text: "0374.032.032",
+          },
+          {
+            boldTest: "Tel:",
+            text: "0374.036.036",
+          },
+          {
+            boldTest: "Fax:",
+            text: "021.321.11.18",
+          },
+          {
+            boldTest: "Email:",
+            text: "office@getica95.ro",
+          },
+          {
+            boldTest: "Site:",
+            text: "www.getica95.ro",
+          },
+        ],
+        contactUs: {
+          title: "Contacteaza-ne",
+        },
+      },
+    },
   },
 };
 
