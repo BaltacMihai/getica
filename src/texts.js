@@ -3114,6 +3114,516 @@ export const TEXTS = {
         ],
       },
     },
+    solutionarePlangeri: {
+      heroSection: {
+        image: energyImage,
+        title: "Getica 95",
+      },
+      section: {
+        title: "Solutionare Plangeri",
+
+        visibleData: [
+          {
+            type: "text",
+            text: "Formular plangere",
+          },
+          {
+            type: "link",
+            text: "Descarca formular plangere",
+            link: "./formular-plangere.pdf",
+          },
+          {
+            type: "text",
+            text: "Procedura cadru de solutionare a plangerilor",
+          },
+          {
+            type: "link",
+            text: "Descarca procedura cadru",
+            link: "./Ord_16 _15.pdf",
+          },
+          {
+            type: "text",
+            text: "Procedura interna de solutionare a plangerilor",
+          },
+          {
+            type: "link",
+            text: "Descarca procedura interna",
+            link: "./procedura-interna.doc",
+          },
+          {
+            type: "text",
+            text: "Soluționarea neînțelegerilor precontractuale și/sau a disputelor apărute în derularea contractelor de furnizare energie electrică și/sau gaze naturale, încheiate de clienții finali",
+          },
+          {
+            type: "link",
+            text: "Descarca procedura",
+            link: "./procedura_solutionarea_neintelegerilor.pdf",
+          },
+        ],
+        disclaimer: "Rapoarte privind solutionarea plangerilor",
+        acordionData: [
+          {
+            title: "Anexe 2022",
+            documents: [
+              {
+                type: "title",
+                text: "Energie electrica",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2022_sem_I_Energie_electrica.pdf",
+              },
+              {
+                type: "title",
+                text: "Gaze naturale",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1__ plangeri_ord_16-2022_sem_I_GAZE_NATURALE.pdf",
+              },
+            ],
+          },
+          {
+            title: "Anexe 2021",
+            documents: [
+              {
+                type: "title",
+                text: "Energie electrica",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - An 2021",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2021_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2021_sem_I_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2021_sem_II_Energie_electrica.pdf",
+              },
+              {
+                type: "title",
+                text: "Gaze naturale",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - An 2021",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-an_2021_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2021_sem_I_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2021_sem_II_GAZE_NATURALE.pdf",
+              },
+            ],
+          },
+          {
+            title: "Anexe 2020",
+            documents: [
+              {
+                type: "title",
+                text: "Energie electrica",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - An 2020",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2020_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2020_sem_I_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2020_sem_II_Energie_electrica.pdf",
+              },
+              {
+                type: "title",
+                text: "Gaze naturale",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - An 2020",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-an_2020_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2020_sem_I_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2020_sem_II_GAZE_NATURALE.pdf",
+              },
+            ],
+          },
+          {
+            title: "Anexe 2019",
+            documents: [
+              {
+                type: "title",
+                text: "Energie electrica",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - An 2019",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2019_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2019_sem_I_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2019_sem_II_Energie_electrica.pdf",
+              },
+              {
+                type: "title",
+                text: "Gaze naturale",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - An 2019",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-an_2019_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2019_sem_I_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2019_sem_II_GAZE_NATURALE.pdf",
+              },
+            ],
+          },
+          {
+            title: "Anexe 2018",
+            documents: [
+              {
+                type: "title",
+                text: "Energie electrica",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - An 2018",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2018_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2018_sem_I_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2018_sem_II_Energie_electrica.pdf",
+              },
+              {
+                type: "title",
+                text: "Gaze naturale",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - An 2018",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-an_2018_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2018_sem_I_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2018_sem_II_GAZE_NATURALE.pdf",
+              },
+            ],
+          },
+          {
+            title: "Anexe 2017",
+            documents: [
+              {
+                type: "title",
+                text: "Energie electrica",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - An 2017",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2017_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2017_sem_I_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2017_sem_II_Energie_electrica.pdf",
+              },
+              {
+                type: "title",
+                text: "Gaze naturale",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - An 2017",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-an_2017_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2017_sem_I_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2017_sem_II_GAZE_NATURALE.pdf",
+              },
+            ],
+          },
+          {
+            title: "Anexe 2016",
+            documents: [
+              {
+                type: "title",
+                text: "Energie electrica",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - An 2016",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2016_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2016_sem_I_Energie_electrica.pdf",
+              },
+              {
+                type: "text",
+                text: "Energie electrica - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2016_sem_II_Energie_electrica.pdf",
+              },
+              {
+                type: "title",
+                text: "Gaze naturale",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - An 2016",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-an_2016_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul I",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2016_sem_I_GAZE_NATURALE.pdf",
+              },
+              {
+                type: "text",
+                text: "Gaze naturale - Semestrul II",
+              },
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe_1_5_plangeri_ord_16-2016_sem_II_GAZE_NATURALE.pdf",
+              },
+            ],
+          },
+          {
+            title: "Anexe 2015",
+            documents: [
+              {
+                type: "title",
+                text: "Anexe an -2015",
+              },
+
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe-1-5-plangeri-ord-16-2015.pdf",
+              },
+
+              {
+                type: "title",
+                text: "Anexe semestrul II - 2015",
+              },
+
+              {
+                type: "link",
+                text: "Descarca PDF",
+                link: "./Anexe-1-5-plangeri-ord-16-2015-sem-II.pdf",
+              },
+            ],
+          },
+        ],
+      },
+    },
   },
 };
 

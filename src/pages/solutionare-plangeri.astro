@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { TEXTS } from "../texts";
-const content = TEXTS.pages.legislatieSiUtile;
+const content = TEXTS.pages.solutionarePlangeri;
 ---
 
 <Layout title={content.section.title}>
@@ -15,20 +15,27 @@ const content = TEXTS.pages.legislatieSiUtile;
     </h2>
 
     <div class="wrapper">
-      <p>{content.section.content}</p>
 
       <div class="row row_show">
         {
-          content.section.visibleData.map((link) => {
-            return (
-              <a href={link.link} class="show">
-                - {link.title}
-              </a>
-            );
+          content.section.visibleData.map((elem) => {
+            switch ( elem.type){
+                     
+                      case "text": 
+                      return( <p class="show">{elem.text}</p>)
+
+                      case "link":
+                      return(      
+                   <a href={elem.link} class="btn-secondary my ">{elem.text}</a>)
+            }
+          
           })
         }
       </div>
-
+      <p class="my-2-1">
+        {content.section.disclaimer}
+      </p>
+     
       <div class="data_acordion row">
         
         {
@@ -61,15 +68,25 @@ const content = TEXTS.pages.legislatieSiUtile;
 </Layout>
 
 <style lang="scss">
+
+    .my-2-1{
+        margin: 2rem 0 1rem 0;
+    }
   .row {
     flex-wrap: wrap;
   }
   .row_show {
     margin: 2rem 0;
- 
+    justify-content: space-between;
+    align-items: center;
+    
+    *{
+        margin: 1rem 0;
+    }
+    
   }
   .show {
-    width: 50%;
+    width: 40%;
     text-decoration: none;
     margin: 1rem 0;
     @media (max-width: #{768px}) {
