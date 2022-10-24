@@ -69,8 +69,9 @@ const content = TEXTS.cookies;
 </style>
 
 <script is:inline>
+  let currentDate = new Date(Date.now() + 30 * 86400000);
   let currentCookies = document.cookie;
-
+  console.log(currentDate.toUTCString());
   if (
     currentCookies.includes("cookieStatus=accepted") ||
     currentCookies.includes("cookieStatus=rejected")
@@ -83,7 +84,8 @@ const content = TEXTS.cookies;
   }
 
   function acceptCookie() {
-    document.cookie = "cookieStatus=accepted;";
+    document.cookie =
+      "cookieStatus=accepted;expires= " + currentDate.toUTCString();
     let cookie = document.getElementById("cookie");
     let openCookie = document.getElementById("openCookie");
 
@@ -92,7 +94,8 @@ const content = TEXTS.cookies;
   }
 
   function rejectCookie() {
-    document.cookie = "cookieStatus=rejected; ";
+    document.cookie =
+      "cookieStatus=rejected;expires= " + currentDate.toUTCString();
     let cookie = document.getElementById("cookie");
     let openCookie = document.getElementById("openCookie");
 
