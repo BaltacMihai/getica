@@ -9,4 +9,4 @@ sursa: "#"
 titluSursa: Getica
 ---
 
-[Notificare de Preventie Impotriva Tentativelor de Frauda (descarca fisier pdf)](../Notificare-de-Preventie-Impotriva-Tentativelor-de-Frauda.pdf)
+[Notificare de Preventie Impotriva Tentativelor de Frauda (descarca fisier pdf)](../articole/Notificare-de-Preventie-Impotriva-Tentativelor-de-Frauda.pdf)
