@@ -3,7 +3,7 @@ import searchIcon from "./../assets/images/search-normal.svg";
 import filterIcon from "./../assets/images/filter.svg";
 import Layout from "../layouts/Layout.astro";
 import publicPower from "../assets/images/articles/publicPower.jpg";
-
+import { BASE_URL } from "../URL";
 const articole = await Astro.glob("./../data/articole/*.md");
 
 const content = {
@@ -63,7 +63,7 @@ const content = {
                   data-tag={articol.frontmatter.category}
                   data-title={articol.frontmatter.title}
                 >
-                  <img src={articol.frontmatter.image} alt="" />
+                  <img src={"./" + articol.frontmatter.image} alt="" />
                   <h2 class="title">{articol.frontmatter.title}</h2>
                   <p class="date">{articol.frontmatter.date}</p>
 

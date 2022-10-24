@@ -3,7 +3,7 @@ title: Opinie Lucian Anghel, Fondator şi CEO, EnergyPal Romania; Finanţarea pr
 category: Diverse#Energie
 date: 06.12.2018
 link: opinie-lucian-anghel-fondator-si-ceo-energypal-romania-finantarea-proiectelor-de-eficientizare-energetica
-image: ./lucian-anghel-638x480.jpg
+image: lucian-anghel-638x480.jpg
 description: Eficienţa energetică reprezintă elementul esenţial şi central al tuturor strategiilor privind energia durabilă. Există o nevoie din ce în ce mare de concepere şi implementare a […]
 sursa: https://www.zf.ro/companii/energie/opinie-lucian-anghel-fondator-si-ceo-energypal-romania-finantarea-proiectelor-de-eficientizare-energetica-17254073
 titluSursa: ZF

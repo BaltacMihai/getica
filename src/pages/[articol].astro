@@ -21,7 +21,10 @@ const { Content, frontmatter } = Astro.props.articol;
   <div class="article">
     <div class="header">
       <h1 class="title">{frontmatter.title}</h1>
-      <img src={frontmatter.image} alt={frontmatter.title + " title"} />
+      <img
+        src={"./articole/" + frontmatter.image}
+        alt={frontmatter.title + " title"}
+      />
       <div class="details">
         <p class="sources">
           Sursa: <a href={frontmatter.sursa}>{frontmatter.titluSursa}</a>
