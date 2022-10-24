@@ -187,6 +187,9 @@ const content = {
         flex-wrap: wrap;
         width: 100%;
 
+        @media (max-width: #{768px}) {
+          flex-direction: column;
+        }
         .article {
           flex: 0 0 24%;
           display: flex;
@@ -197,6 +200,10 @@ const content = {
 
           text-decoration: none;
           color: black;
+          @media (max-width: #{768px}) {
+            flex: 0 0 100%;
+            margin-bottom: 2rem;
+          }
 
           img {
             width: 100%;

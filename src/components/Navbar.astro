@@ -2,6 +2,7 @@
 import logo from "./../assets/images/logo.png";
 import hamburger from "./../assets/images/hamburger.svg";
 import closeHamburger from "./../assets/images/close.svg";
+import loginIcon from "./../assets/images/login.svg";
 import { BASE_URL } from "../URL";
 ---
 
@@ -23,6 +24,14 @@ import { BASE_URL } from "../URL";
   }
 
   function activeTheDropdown(idHandler) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+
+    for (let i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
     document.getElementById(idHandler).classList.toggle("show");
   }
 
@@ -122,11 +131,13 @@ import { BASE_URL } from "../URL";
     </div>
 
     <a href={BASE_URL + "articole"}>Articole</a>
-    <a href="">Autentificare Clienti - Energetica</a>
+    <a href="https://clienti.energetica.ro/auth/login" class="row-center">
+      <img src={loginIcon} alt="loginIcon" /> Autentificare Clienti</a
+    >
   </div>
 </nav>
 
-<style>
+<style lang="scss">
   /* Dropdown Button */
 
   .dropdown-content {
@@ -138,6 +149,9 @@ import { BASE_URL } from "../URL";
 
     background-color: #fcfbfc;
     margin-top: 15px;
+    @media (max-width: #{768px}) {
+      position: relative;
+    }
   }
 
   .dropdown-content a {
@@ -149,5 +163,13 @@ import { BASE_URL } from "../URL";
 
   .show {
     display: block;
+  }
+
+  .row-center {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 5px;
+    }
   }
 </style>

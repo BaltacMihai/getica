@@ -8,13 +8,11 @@
   img {
     width: 100vw;
     height: 250px;
-    margin-left: -1vw;
     object-fit: cover;
     margin-top: 8vh;
     filter: brightness(50%);
 
     @include mobile {
-      margin-left: -4.5vw;
       margin-top: 10vh;
     }
   }
@@ -38,7 +36,7 @@
   width: 70%;
   margin: 5vh auto;
   @include mobile {
-    width: 100%;
+    width: 90%;
   }
 
   h2 {
