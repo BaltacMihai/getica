@@ -2,13 +2,24 @@
 import searchIcon from "./../assets/images/search-normal.svg";
 import filterIcon from "./../assets/images/filter.svg";
 import Layout from "../layouts/Layout.astro";
+import publicPower from "../assets/images/articles/publicPower.jpg";
 
 const articole = await Astro.glob("./../data/articole/*.md");
+
+const content = {
+  heroSection: {
+    image: publicPower,
+    title: "Articole",
+  },
+};
 ---
 
 <Layout title="Procesul de schimbare a furnizorului">
-  <div class="container">
-    <h1 class="title">Articole</h1>
+  <div class="heroSection">
+    <img src={content.heroSection.image} alt="Solar Panel image" />
+    <h1>{content.heroSection.title}</h1>
+  </div>
+  <div class="container content">
     <div class="wrapper">
       <div class="filters">
         <div class="relative">
@@ -20,7 +31,7 @@ const articole = await Astro.glob("./../data/articole/*.md");
           <img src={filterIcon} alt="filterIcon" />
 
           <select id="filter" onchange="applyFilter()">
-            <option value="#" selected="selected">All Articles</option>
+            <option value="#" selected="selected">Toate Articolele</option>
 
             <option value="Comunicate">Comunicate</option>
             <option value="Diverse">Diverse</option>
@@ -47,7 +58,7 @@ const articole = await Astro.glob("./../data/articole/*.md");
             .map((articol) => {
               return (
                 <a
-                  href={articol.frontmatter.link}
+                  href={"../" + articol.frontmatter.link}
                   class="article"
                   data-tag={articol.frontmatter.category}
                   data-title={articol.frontmatter.title}
@@ -102,12 +113,14 @@ const articole = await Astro.glob("./../data/articole/*.md");
 
 <style lang="scss">
   .container {
-    padding-top: 7.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 
+    width: 70%;
+    margin: 5vh auto;
+
+    margin-top: -2.5rem;
     .wrapper {
       display: flex;
       align-items: center;
@@ -116,23 +129,25 @@ const articole = await Astro.glob("./../data/articole/*.md");
       justify-content: center;
 
       .filters {
-        padding-top: 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 60%;
+        width: 100%;
+        z-index: 99;
+        padding: 1.5rem;
+        background-color: white;
+        box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+        @media (max-width: #{768px}) {
+          flex-direction: column;
+        }
 
         * {
           padding: 0.25rem;
         }
 
-        input,
-        input:is(:hover, :active, :focus) {
-          border: none;
-          border-bottom: 1px solid black;
-        }
-
         .relative {
+          display: flex;
+          align-items: center;
           input,
           select {
             width: 100%;
@@ -170,10 +185,10 @@ const articole = await Astro.glob("./../data/articole/*.md");
         padding-top: 2.5rem;
         gap: 4%;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
 
         .article {
-          flex: 0 0 25%;
+          flex: 0 0 24%;
           display: flex;
           flex-direction: column;
           display: flex;

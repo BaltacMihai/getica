@@ -4,7 +4,7 @@ category: Diverse#GazeNaturale
 date: 06.19.2018
 link: pretul-petrolului-continua-sa-scada-in-asteptarea-reuniuniii-opec
 description: Cu mai puţin de o săptămână înainte de reuniunea Organizaţiei Ţărilor Exportatoare de Petrol (OPEC) de la Viena, tendinţa preţului la barilul de petrol este de […]
-image: ./articole/4-sonde.jpg
+image: ./4-sonde.jpg
 sursa: https://www.mediafax.ro/economic/pretul-petrolului-continua-sa-scada-in-asteptarea-reuniuniii-opec-17258176
 titluSursa: MediaFax
 ---

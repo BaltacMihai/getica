@@ -20,16 +20,13 @@ const { Content, frontmatter } = Astro.props.articol;
 <Layout title={frontmatter.title}>
   <div class="article">
     <div class="header">
+      <h1 class="title">{frontmatter.title}</h1>
       <img src={frontmatter.image} alt={frontmatter.title + " title"} />
       <div class="details">
-        <div class="col">
-          <h1 class="title">{frontmatter.title}</h1>
-          <p class="date">{frontmatter.date}</p>
-        </div>
-
         <p class="sources">
           Sursa: <a href={frontmatter.sursa}>{frontmatter.titluSursa}</a>
         </p>
+        <p class="date">{frontmatter.date}</p>
       </div>
     </div>
     <div class="content">
@@ -40,21 +37,35 @@ const { Content, frontmatter } = Astro.props.articol;
 
 <style lang="scss">
   .article {
-    padding: 0 10rem;
-    padding-top: 7.5rem;
+    padding: 7.5rem 5vw;
+    width: 70%;
+    margin: 0 auto;
+    @media (max-width: #{768px}) {
+      width: 90%;
+      padding: 7.5rem 1rem;
+    }
 
     .header {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        margin-bottom: 2.5rem;
+      }
+
+      img {
+        width: 600px;
+        @media (max-width: #{768px}) {
+          width: 100%;
+        }
+      }
       .details {
         margin-left: 1rem;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
+        width: 100%;
 
-        .title {
-          margin-bottom: 1rem;
-        }
         .sources {
           margin-top: 1rem;
         }
