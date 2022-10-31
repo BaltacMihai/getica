@@ -56,15 +56,19 @@ const content = {
               }
             })
             .map((articol) => {
+              let str = articol.frontmatter.title;
+              let words = str.split(" ");
+              const title = words[0] + " " + words[1] + " " + words[2] + " ...";
+
               return (
                 <a
                   href={"../" + articol.frontmatter.link}
                   class="article"
                   data-tag={articol.frontmatter.category}
-                  data-title={articol.frontmatter.title}
+                  data-title={title}
                 >
                   <img src={"./" + articol.frontmatter.image} alt="" />
-                  <h2 class="title">{articol.frontmatter.title}</h2>
+                  <h2 class="title">{title}</h2>
                   <p class="date">{articol.frontmatter.date}</p>
 
                   <p class="text">{articol.frontmatter.description}</p>
@@ -206,7 +210,7 @@ const content = {
             flex: 0 0 100%;
           }
           h2 {
-            margin-bottom: 2rem;
+            margin-bottom: 0rem;
           }
           img {
             width: 100%;

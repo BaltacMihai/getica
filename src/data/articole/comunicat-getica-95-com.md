@@ -1,10 +1,10 @@
 ---
-title: COMUNICAT GETICA 95 COM
+title: Comunicat getica 95 COM
 category: Diverse#GazeNaturale#Comunicate#Energie/
 date: 04.24.2020
 link: comunicat-getica-95-com
 image: getica-comunicat.jpg
-description: COMUNICAT GETICA 95 COM București, 24.04.2020   GETICA 95 COM mulțumește partenerilor săi pentru sprijinul acordat în această perioadă dificilă, care au reușit să găsească soluții […]
+description: Comunicat getica 95 COM București, 24.04.2020   GETICA 95 COM mulțumește partenerilor săi pentru sprijinul acordat în această perioadă dificilă, care au reușit să găsească soluții […]
 sursa: "#"
 titluSursa: Getica
 ---
