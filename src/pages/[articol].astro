@@ -39,10 +39,14 @@ const { Content, frontmatter } = Astro.props.articol;
 </Layout>
 
 <style lang="scss">
+  .content {
+    box-shadow: none;
+  }
   .article {
     padding: 7.5rem 5vw;
     width: 70%;
     margin: 0 auto;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     @media (max-width: #{768px}) {
       width: 90%;
       padding: 7.5rem 1rem;

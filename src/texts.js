@@ -216,7 +216,7 @@ export const TEXTS = {
           title: "Energie Electrica",
         },
         section: {
-          title: "Procesul de schimbare a furnizorului",
+          title: "Procesul de schimbare  furnizorului",
         },
         data: [
           {
