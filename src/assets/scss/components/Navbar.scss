@@ -16,7 +16,7 @@
 
   .icon {
     width: 200px;
-    margin-left: 2rem;
+    margin-left: 6rem;
     @include mobile {
       margin-left: 1rem;
     }
@@ -36,6 +36,7 @@
   .menu {
     display: flex;
     align-items: center;
+    margin-right: 4rem;
     @include tablet {
       display: none;
 
