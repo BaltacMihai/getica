@@ -97,7 +97,7 @@ export const TEXTS = {
           data: [
             {
               imageSrc: analiza,
-              title: "Analiza",
+              title: "Analiză",
               description: `Analiză preliminară gratuită în cadrul căreia se clarifică procedura de schimbare a furnizorului, se stabilesc condițiile viitorului contract reciproc avantajoase`,
             },
             {
